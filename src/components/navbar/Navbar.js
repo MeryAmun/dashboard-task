@@ -1,16 +1,11 @@
 import React, { useRef,useState } from "react";
-import { Menu, Moon } from "react-feather";
-import { navBarData } from "../../data/data";
+import { Menu} from "react-feather";
 import "./navbar.css";
 import { Link } from "react-router-dom";
-import OverlayTrigger from "react-bootstrap/OverlayTrigger";
-import Tooltip from "react-bootstrap/Tooltip";
-import FlagsMenu from "../flags/FlagsMenu";
-//import avatar  from '../../assets/avatar.svg'
-import { FaUserAlt, FaUserCircle } from "react-icons/fa";
+import { FaUserAlt } from "react-icons/fa";
 import { IoSettingsOutline, IoMail, IoLogOutOutline } from "react-icons/io5";
 import { RiArrowDropDownLine, RiArrowDropUpLine} from 'react-icons/ri'
-import { GrFormPrevious } from "react-icons/gr";
+
 
 const Navbar = () => {
   const bars = useRef();
@@ -42,8 +37,9 @@ const Navbar = () => {
             aria-expanded="false" 
             alt="" />
             <span
-              className="btn dropdown-toggle"
-              type="button"
+              className="mx-2 dropdown-toggle"
+             
+      
               data-bs-toggle="dropdown"
               aria-expanded="false"
             >

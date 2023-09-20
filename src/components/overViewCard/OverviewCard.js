@@ -2,7 +2,7 @@ import React from "react";
 import "./status.css";
 import { IoSettingsSharp } from "react-icons/io5";
 import Badge from "../badge/Badge";
-import { HiMiniUsers} from 'react-icons/hi2'
+
 
 const OverViewCard = ({data}) => {
   return (

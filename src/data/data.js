@@ -1,10 +1,19 @@
-import { Home, CheckSquare,User,ShoppingCart,Folder,Settings,MessageSquare,List,Server} from 'react-feather';
+import { Home, Settings,MessageSquare,Server} from 'react-feather';
 import { AiFillDashboard,AiOutlineMail,AiTwotoneFile,AiFillWarning } from 'react-icons/ai'
 import { SlCalender,SlGraph } from 'react-icons/sl'
-import { IoBugSharp,IoRocketSharp,IoCartOutline, IoCutOutline,IoTicketSharp,IoCardSharp,IoSettingsSharp} from 'react-icons/io5'
-import { GrCart } from 'react-icons/gr'
-import { FaArrowsRotate,FaCartPlus,FaCircleArrowUp,FaFileContract,FaUsers,FaIdeal,FaRegMoneyBill1,FaArrowTrendUp, FaArrowTrendDown} from 'react-icons/fa6'
-import { FaFileInvoice,FaTasks,FaFileInvoiceDollar } from 'react-icons/fa'
+import { IoBugSharp,IoRocketSharp,IoCartOutline, IoCutOutline,IoTicketSharp,
+    //IoCardSharp,IoSettingsSharp
+} from 'react-icons/io5'
+//import { GrCart } from 'react-icons/gr'
+import { FaArrowsRotate,FaCartPlus,FaCircleArrowUp,FaFileContract,FaUsers,FaIdeal,FaRegMoneyBill1,
+    
+   // FaArrowTrendUp, FaArrowTrendDown
+} from 'react-icons/fa6'
+import { FaFileInvoice,FaTasks,
+    
+    //FaFileInvoiceDollar
+
+} from 'react-icons/fa'
 import { GiTeamDowngrade,GiSlingshot } from 'react-icons/gi'
 import { FiActivity } from 'react-icons/fi'
 import { FaBars } from 'react-icons/fa'
@@ -12,7 +21,7 @@ import { GoGoal,GoStack } from 'react-icons/go'
 import { BsExclamationCircle} from 'react-icons/bs'
 import { HiMiniUsers } from 'react-icons/hi2'
 import { HiOutlineQuestionMarkCircle} from 'react-icons/hi'
-import { CgArrowLongRight} from 'react-icons/cg'
+//import { CgArrowLongRight} from 'react-icons/cg'
 import { MdOutlineIndeterminateCheckBox } from 'react-icons/md'
 import { RiArrowDropDownLine, RiArrowDropUpLine} from 'react-icons/ri'
 import { FcDepartment, FcLeave} from 'react-icons/fc';

@@ -2,10 +2,8 @@ import React,{ useState, useRef } from 'react'
 import './sidebar.css'
 import { Disc, X, Circle} from 'react-feather';
 import { Link } from 'react-router-dom'
-
 import { sideBarData } from '../../data/data';
-import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
-import Tooltip from 'react-bootstrap/Tooltip';
+
 
 // const width ={
 //   width:'30px'

@@ -47,8 +47,8 @@
     align-items: center;
     margin-right: 1rem;
 }
-.navbar__login{
-    
+.dropdown-toggle{
+    cursor: pointer;
 }
 .navbar__loginLink{
     border: 1px solid #f24443;
