@@ -1,0 +1,209 @@
+.sidebar__wrapper{
+    /* position: relative;
+    width:30px;
+    height: 100vh; */
+    height: 100%;
+    width: 90px;
+    position: fixed;
+    top: 0;
+    left: 0px;
+    z-index: 1036;
+    background-color: #fff;
+    border: 2px solid #fff;
+    box-shadow: 0 8px 20px -8px lightgray;
+    align-items: center;
+   padding: 20px;
+   transition: width ease 0.31s;
+}
+
+.sidebar__wrapperActive{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 100%;
+    width:240px;
+    background-color: #fff;
+  
+}
+.sidebar__wrapper:hover{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 100%;
+    width:240px;
+    background-color: #fff;
+  
+}
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    height: 100vh;
+    /* width: 60px; */
+    background-color: #fff;
+    align-items: center;
+   
+    
+}
+
+
+
+.sidebar__logoContainer{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    overflow: hidden;
+    padding: 20px 30px;
+    background-color: rgb(17, 24, 39);
+    
+}
+.sidebar__logoBox{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    /* padding: 1rem; */
+    
+}
+.sidebar__closeButton{
+    color: #f24443;
+    margin-left: 0.8rem;
+    display: none;
+}
+.sidebar__radioButton{
+    color: #f24443;
+    margin-left: 0.8rem;
+}
+.sidebar__image,
+.sidebar__radioButton{
+    color: #f24443;
+}
+.sidebar__logoText{
+   margin-right: 20px;
+}
+.sidebar__LogoLink{
+    font-size: 1.57rem;
+    font-weight: 600;
+    line-height: 26px;
+    color: rgb(255, 255, 255);
+    padding-left: 1rem;
+    letter-spacing: 0.01rem;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+}
+.sidebar__linkContainer{
+    transition:padding 1s;
+    padding: 10px 13px;
+
+}
+.sidebar__links{
+    background-color: rgb(31, 41, 55);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start; 
+  overflow-y: scroll;
+  overflow-x: hidden;
+  padding:0;
+
+ 
+}
+.sidebar__link{
+  display: flex;
+  text-decoration: none;
+ 
+}
+.sidebar__linkContainer:hover{
+ padding-left: 20px;
+}
+
+.sidebar__linkContainerActive {
+    display: flex;
+    color: #fff;
+    cursor: pointer;
+    width: 240px;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(118deg,#F24443,rgba(255,159,67,0.7));
+    box-shadow: 0 0 10px 1px rgb(255 159 67 / 70%);
+    border-radius: 4px;
+    webkit-transition: padding .35s ease 0s!important;
+
+}
+.sidebar__linkContainer__collapse_Active{
+    display: flex;
+    color: #fff;
+    cursor: pointer;
+    width: 240px;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+    background: #565656;
+    box-shadow: 0 0 10px 1px rgb(255 159 67 / 70%);
+    border-radius: 4px;
+    webkit-transition: padding .35s ease 0s!important;
+}
+.sidebar__iconAnd__sidebarIconNameActive{
+    color: #fff;
+}
+
+
+.sidebar__linkIcon{
+    cursor: pointer;
+    display: block;
+     color: rgb(255, 255, 255);
+    margin-right: 1rem;
+    margin-top: 5px;
+}
+.sidebar__linkTitle{
+ color: rgb(255, 255, 255);
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+font-size: 16px;
+font-weight: 400;
+line-height: 24px;
+}
+
+
+
+/* ========================media queries =============================================*/
+
+@media screen and (max-width: 576px) {
+    .sidebar__wrapper{
+        width:240px;
+    }
+
+    
+.sidebar__wrapper:hover{
+    display: none;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 100%;
+    width:240px;
+    background-color: #fff;
+  
+}
+.sidebar__wrapperActive{
+    display: none;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 100%;
+    width:240px;
+    background-color: #fff;
+  
+}
+.sidebar__closeButton{
+    display: block;
+    margin-left: 2.5rem;
+}
+.sidebar__radioButton{
+    display: none;
+}
+
+}

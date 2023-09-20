@@ -1,0 +1,59 @@
+.dropdown-toggle::after {
+    display: none !important; 
+  }
+.dropdown:focus{
+    outline: none !important;
+    box-shadow: none;
+    border: none;
+    
+  }
+.nav-link:focus{
+    outline: none !important;
+    box-shadow: none;
+    border: none;
+    
+  }
+.dropdown-toggle .btn:focus{
+    outline: none !important;
+    box-shadow: none;
+    border: none;
+    
+  }
+
+  .flag__itemBox:hover > .flag__language {
+    color: #f24443;
+    
+  }
+ 
+.flag__itemBox{
+    display: flex;
+    /* justify-content:space-around; */
+    align-items: center;
+}
+
+.flag__flagIcon{
+    /* margin-top: 5px; */
+    align-self: flex-start;
+    margin-right: 1rem;
+}
+.flag__language{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    color: #626262;
+    /* padding: 9px 19px; */
+}
+  .bootstrap-select .form-control:focus {
+    outline: 0px none #fff !important;
+}
+
+.bootstrap-select .form-control > div.filter-option:focus {
+    outline: 0px none #fff !important;
+}
+
+.bootstrap-select .form-control > div.filter-option > div.filter-option-inner:focus {
+    outline: 0px none #fff !important;
+}
+
+.bootstrap-select .form-control > div.filter-option > div.filter-option-inner > div.filter-option-inner-inner:focus {
+    outline: 0px none #fff !important;
+}
