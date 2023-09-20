@@ -1,15 +1,17 @@
 import { Home, CheckSquare,User,ShoppingCart,Folder,Settings,MessageSquare,List,Server} from 'react-feather';
 import { AiFillDashboard,AiOutlineMail,AiTwotoneFile,AiFillWarning } from 'react-icons/ai'
 import { SlCalender,SlGraph } from 'react-icons/sl'
-import { IoBugSharp,IoRocketSharp, IoCutOutline,IoTicketSharp,IoCardSharp,IoSettingsSharp} from 'react-icons/io5'
-import { GrProjects,GrTasks,GrCircleQuestion,GrCart } from 'react-icons/gr'
+import { IoBugSharp,IoRocketSharp,IoCartOutline, IoCutOutline,IoTicketSharp,IoCardSharp,IoSettingsSharp} from 'react-icons/io5'
+import { GrCart } from 'react-icons/gr'
 import { FaArrowsRotate,FaCartPlus,FaCircleArrowUp,FaFileContract,FaUsers,FaIdeal,FaRegMoneyBill1,FaArrowTrendUp, FaArrowTrendDown} from 'react-icons/fa6'
 import { FaFileInvoice,FaTasks,FaFileInvoiceDollar } from 'react-icons/fa'
 import { GiTeamDowngrade,GiSlingshot } from 'react-icons/gi'
 import { FiActivity } from 'react-icons/fi'
+import { FaBars } from 'react-icons/fa'
 import { GoGoal,GoStack } from 'react-icons/go'
 import { BsExclamationCircle} from 'react-icons/bs'
-import { HiMiniUsers} from 'react-icons/hi2'
+import { HiMiniUsers } from 'react-icons/hi2'
+import { HiOutlineQuestionMarkCircle} from 'react-icons/hi'
 import { CgArrowLongRight} from 'react-icons/cg'
 import { MdOutlineIndeterminateCheckBox } from 'react-icons/md'
 import { RiArrowDropDownLine, RiArrowDropUpLine} from 'react-icons/ri'
@@ -17,29 +19,30 @@ import { FcDepartment, FcLeave} from 'react-icons/fc';
 
 
 
-const overViewData = [
+export const overViewData = [
     {
         iconOne:RiArrowDropUpLine,title:'Clients',qty:512,percentage:"12%",color:"rgb(16, 185, 129)",
+        color2:"rgb(16, 185, 129)",
         id:1,
-       iconTwo:IoSettingsSharp,iconThree:HiMiniUsers
+       iconTwo:HiMiniUsers
     },
     {
-        iconOne:RiArrowDropDownLine,title:'Sales',qty:7770,percentage:"16%",color1:"rgb(239, 68, 68)",
+        iconOne:RiArrowDropDownLine,title:'Sales',qty:"$7,770",percentage:"16%",color:"rgb(239, 68, 68)",
         color2:"rgb(59, 130, 246)",
         id:11,
-       iconTwo:IoSettingsSharp,iconThree:GrCart
+       iconTwo:IoCartOutline
     },
     {
-        iconOne:BsExclamationCircle,title:'Performance',qty:512,percentage:"12%",color1:"rgb(234, 179, 8)",
+        iconOne:BsExclamationCircle,title:'Performance',qty:"256%",percentage:"Overflow",color:"rgb(234, 179, 8)",
         color2:"rgb(239, 68, 68)",
         id:111,
-       iconTwo:IoSettingsSharp,iconThree:SlGraph
+       iconTwo:SlGraph
     },
 ]
 
 export const sideBarData = [
     {
-        icon:AiFillDashboard,title:'Dashboard',link:'/dashboard',id:1
+        icon:AiFillDashboard,title:'Dashboard',link:'/',id:1
     },
     {
         icon:SlCalender,title:'Calender',link:'/calender',id:2
@@ -81,13 +84,10 @@ export const sideBarData = [
         icon:GoGoal,title:'Goals',link:'/goals',id:445
     },
     {
-        icon:GrProjects,title:'Projects',link:'/projects',id:4
+        icon:FaBars,title:'Projects',link:'/projects',id:4
     },
     {
         icon:AiTwotoneFile,title:'File Manager',link:'/files',id:5
-    },
-    {
-        icon:GrTasks,title:'Tasks',link:'/tasks',id:6
     },
     {
         icon:FaArrowsRotate,title:'Xero',link:'/xero',id:7
@@ -123,7 +123,7 @@ export const sideBarData = [
         icon:IoTicketSharp,title:'Tickets',link:'/tickets',id:912
     },
     {
-        icon:GrCircleQuestion,title:'Knowledge',link:'/knowledge',id:912
+        icon:HiOutlineQuestionMarkCircle,title:'Knowledge',link:'/knowledge',id:912
     },
 ]
 export const navBarData = [

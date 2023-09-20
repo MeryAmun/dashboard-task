@@ -3,17 +3,18 @@
     width:30px;
     height: 100vh; */
     height: 100%;
-    width: 90px;
+    width: 80px;
     position: fixed;
     top: 0;
     left: 0px;
     z-index: 1036;
-    background-color: #fff;
+    background-color: rgb(31, 41, 55);
     border: 2px solid #fff;
     box-shadow: 0 8px 20px -8px lightgray;
     align-items: center;
    padding: 20px;
    transition: width ease 0.31s;
+   /* color: rgba(217, 218, 223, 0.6); */
 }
 
 .sidebar__wrapperActive{
@@ -45,6 +46,7 @@
     /* width: 60px; */
     background-color: #fff;
     align-items: center;
+    border-radius: 10px;
    
     
 }
@@ -56,9 +58,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 10px;
     overflow: hidden;
-    padding: 20px 30px;
+    padding: 20px 10px;
     background-color: rgb(17, 24, 39);
     
 }
@@ -71,17 +72,17 @@
     
 }
 .sidebar__closeButton{
-    color: #f24443;
+    color: rgb(255, 255, 255);
     margin-left: 0.8rem;
     display: none;
 }
 .sidebar__radioButton{
-    color: #f24443;
+   color: rgb(255, 255, 255);
     margin-left: 0.8rem;
 }
 .sidebar__image,
 .sidebar__radioButton{
-    color: #f24443;
+   color: rgb(255, 255, 255);
 }
 .sidebar__logoText{
    margin-right: 20px;
@@ -119,23 +120,10 @@
   text-decoration: none;
  
 }
-.sidebar__linkContainer:hover{
- padding-left: 20px;
+.sidebar__linkContainer:hover .sidebar__linkTitle {
+color: rgb(255, 255, 255);
 }
 
-.sidebar__linkContainerActive {
-    display: flex;
-    color: #fff;
-    cursor: pointer;
-    width: 240px;
-    font-weight: 500;
-    font-family: 'Montserrat', sans-serif;
-    background: linear-gradient(118deg,#F24443,rgba(255,159,67,0.7));
-    box-shadow: 0 0 10px 1px rgb(255 159 67 / 70%);
-    border-radius: 4px;
-    webkit-transition: padding .35s ease 0s!important;
-
-}
 .sidebar__linkContainer__collapse_Active{
     display: flex;
     color: #fff;
@@ -148,9 +136,7 @@
     border-radius: 4px;
     webkit-transition: padding .35s ease 0s!important;
 }
-.sidebar__iconAnd__sidebarIconNameActive{
-    color: #fff;
-}
+
 
 
 .sidebar__linkIcon{
@@ -161,7 +147,7 @@
     margin-top: 5px;
 }
 .sidebar__linkTitle{
- color: rgb(255, 255, 255);
+ color: rgba(255, 255, 255,0.6);
       font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 font-size: 16px;
 font-weight: 400;

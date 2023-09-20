@@ -1,58 +1,116 @@
-import React, { useRef } from "react";
-import { Menu, Moon} from "react-feather";
+import React, { useRef,useState } from "react";
+import { Menu, Moon } from "react-feather";
 import { navBarData } from "../../data/data";
 import "./navbar.css";
 import { Link } from "react-router-dom";
-import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
-import Tooltip from 'react-bootstrap/Tooltip';
-import  FlagsMenu  from '../flags/FlagsMenu'
+import OverlayTrigger from "react-bootstrap/OverlayTrigger";
+import Tooltip from "react-bootstrap/Tooltip";
+import FlagsMenu from "../flags/FlagsMenu";
 //import avatar  from '../../assets/avatar.svg'
+import { FaUserAlt, FaUserCircle } from "react-icons/fa";
+import { IoSettingsOutline, IoMail, IoLogOutOutline } from "react-icons/io5";
+import { RiArrowDropDownLine, RiArrowDropUpLine} from 'react-icons/ri'
+import { GrFormPrevious } from "react-icons/gr";
 
 const Navbar = () => {
-  const bars = useRef()
-  console.log(bars)
-  
-
-
-
-
-
+  const bars = useRef();
+  const [toggleArrow, setToggleArrow] = useState(false)
+  console.log(bars);
 
   return (
     <div className="navbar">
-      <Menu size={30} color="black" className="navbar__menuIcon" onClick={() =>{}}/>
-      <div className="navbar__icons">
-        {navBarData.map((link) => (
-          <OverlayTrigger
-          placement='bottom'
-          overlay={
-            <Tooltip id={`tooltip-bottom`}>
-             {link.title}
-            </Tooltip>
-          }
-          key={link.id}
-        >
-          <Link to={link.link} className="navbar__link">
-            {<link.icon size={20} className="navbar__icon" />}
-          </Link>
-          </OverlayTrigger>
-        ))}
-      </div>
+      <Menu
+        size={30}
+        color="black"
+        className="navbar__menuIcon"
+        onClick={() => {}}
+      />
+      <form className="d-flex px-2" role="search">
+        <input
+          className="form-control me-2"
+          type="search"
+          placeholder="Search"
+          aria-label="Search"
+        />
+      </form>
       <div className="navbar__profile">
-      <FlagsMenu/>
-        <Moon size={20} className="navbar__icon" />
         <div className="navbar__login">
-        <div class="dropdown">
-  <div className="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-     <span>Bruce</span>
-  </div>
-  <ul class="dropdown-menu">
-    <li><a class="dropdown-item" href="#">Action</a></li>
-    <li><a class="dropdown-item" href="#">Another action</a></li>
-    <li><a class="dropdown-item" href="#">Something else here</a></li>
-  </ul>
-</div>
+          <div class="dropdown">
+            <img src="https://avatars.dicebear.com/api/avataaars/example.svg?options[top][]=shortHair&options[accessoriesChance]=93" width="30px" height="30px" style={{borderRadius:"50%"}}
+            className="dropdown-toggle"
+            data-bs-toggle="dropdown"
+            aria-expanded="false" 
+            alt="" />
+            <span
+              className="btn dropdown-toggle"
+              type="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <span className="active" aria-current="page" onClick={() => setToggleArrow(!toggleArrow)}>{"Bruce"}</span>
+              
+            </span>
+            {
+                !toggleArrow ? (
+                <RiArrowDropDownLine
+                  size={25}
+                  color="rgb(59, 130, 246)"
+              //     className="dropdown-toggle"
+              // data-bs-toggle="dropdown"
+              // aria-expanded="false"
+                />) : (
+                  <RiArrowDropUpLine
+              size={25}
+              color={!toggleArrow ? "black": "rgb(59, 130, 246)"}
+              className="active"
+              // data-bs-toggle="dropdown"
+              // aria-expanded="false"
+            />
+                )
+              }
+            <ul class="dropdown-menu">
+              <li className="d-flex justify-content-around align-items-center p-2">
+                <FaUserAlt size={15} color="black" />
+                <Link
+                  to="/profile"
+                  className="fs-6 text-decoration-none text-secondary-emphasis"
+                >
+                  My Profile
+                </Link>
+              </li>
+              <li className="d-flex justify-content-around align-items-center p-2">
+                <IoSettingsOutline size={15} color="black" />
+                <Link
+                  to="/settings"
+                  className="fs-6 text-decoration-none text-secondary-emphasis"
+                >
+                  Settings
+                </Link>
+              </li>
+              <li className="d-flex justify-content-around align-items-center p-2">
+                <IoMail size={15} color="black" />
+                <Link
+                  to="/messages"
+                  className="fs-6 text-decoration-none text-secondary-emphasis"
+                >
+                  Messages
+                </Link>
+              </li>
+              <li className="d-flex justify-content-around align-items-center p-2">
+                <IoLogOutOutline size={15} color="black" />
+                <Link
+                  to="/profile"
+                  className="fs-6 text-decoration-none text-secondary-emphasis"
+                >
+                  Log Out
+                </Link>
+              </li>
+            </ul>
+          </div>
         </div>
+        {/* <FlagsMenu />
+        <Moon size={20} className="navbar__icon" /> */}
+        
       </div>
     </div>
   );

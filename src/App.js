@@ -3,6 +3,7 @@ import './App.css';
 import { Routes, Route , } from 'react-router';
 import  Sidebar from "./components/sidebar/Sidebar";
 import Navbar from "./components/navbar/Navbar";
+import { Home } from './screens/Home';
 
 function App() {
   const mainApp =useRef();
@@ -25,10 +26,9 @@ function App() {
           <div className="app__main" ref={mainApp}>
    <Navbar/>
 
-     {/* <Routes>
+     <Routes>
       <Route exact path='/' element={<Home/>}/>
-      <Route  path='/status' element={<Status/>}/>
-     </Routes> */}
+     </Routes>
 </div> 
     </div>
   );

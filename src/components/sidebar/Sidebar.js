@@ -70,7 +70,7 @@ const Sidebar = ({change, previous}) => {
       {
         <link.icon size={15} className={ activeId === link.id ? 'sidebar__linkIcon sidebar__iconAnd__sidebarIconNameActive': 'sidebar__linkIcon'}/>
       }
-    <span className={ activeId === link.id ? 'sidebar__linkTitle sidebar__iconAnd__sidebarIconNameActive': 'sidebar__linkTitle'}>
+    <span className={ activeId === link.id ? 'sidebar__linkTitle text-light sidebar__iconAnd__sidebarIconNameActive': 'sidebar__linkTitle '}>
       {link.title}
       </span>
       </Link>
