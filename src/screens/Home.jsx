@@ -1,8 +1,9 @@
 import React from 'react'
 import { SlGraph } from 'react-icons/sl'
 import OverViewCard from '../components/cards/OverviewCard'
-import { clients, overViewData } from '../data/data'
+import { clients, overViewData, transactions } from '../data/data'
 import ClientCard from '../components/cards/ClientCard'
+import TransactionsCard from '../components/cards/TransactonsCard'
 
 export const Home = () => {
   return (
@@ -27,8 +28,8 @@ export const Home = () => {
     <div className="d-flex  py-4 gap-2 w-100">
       <div className="d-flex flex-column justify-content-between align-items-center py-4 gap-2 w-100">
       {
-          clients.map((data) => (
-           <div>Transactions</div>
+          transactions.map((data) => (
+          <TransactionsCard key={data.id} data={data}/>
           ))
         }
       </div>

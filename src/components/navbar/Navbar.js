@@ -2,7 +2,7 @@ import React, { useRef,useState } from "react";
 import "./navbar.css";
 import { Link } from "react-router-dom";
 import { FaUserAlt } from "react-icons/fa";
-import { BsThreeDotsVertical } from "react-icons/bs";
+//import { BsThreeDotsVertical } from "react-icons/bs";
 import { IoSettingsOutline, IoMail, IoLogOutOutline } from "react-icons/io5";
 import { RiArrowDropDownLine, RiArrowDropUpLine} from 'react-icons/ri'
 
