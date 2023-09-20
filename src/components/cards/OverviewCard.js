@@ -1,7 +1,7 @@
 import React from "react";
-import "./status.css";
+// import "./status.css";
 import { IoSettingsSharp } from "react-icons/io5";
-import Badge from "../badge/Badge";
+import Badge from "./Badge";
 
 
 const OverViewCard = ({data}) => {

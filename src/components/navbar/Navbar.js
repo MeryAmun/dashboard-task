@@ -1,8 +1,8 @@
 import React, { useRef,useState } from "react";
-import { Menu} from "react-feather";
 import "./navbar.css";
 import { Link } from "react-router-dom";
 import { FaUserAlt } from "react-icons/fa";
+import { BsThreeDotsVertical } from "react-icons/bs";
 import { IoSettingsOutline, IoMail, IoLogOutOutline } from "react-icons/io5";
 import { RiArrowDropDownLine, RiArrowDropUpLine} from 'react-icons/ri'
 
@@ -14,12 +14,6 @@ const Navbar = () => {
 
   return (
     <div className="navbar">
-      <Menu
-        size={30}
-        color="black"
-        className="navbar__menuIcon"
-        onClick={() => {}}
-      />
       <form className="d-flex px-2" role="search">
         <input
           className="form-control me-2"
@@ -27,10 +21,18 @@ const Navbar = () => {
           placeholder="Search"
           aria-label="Search"
         />
+         {/* <BsThreeDotsVertical
+                  size={25}
+                  color="rgb(59, 130, 246)"
+             className="mobile-dots"
+              // data-bs-toggle="dropdown"
+              // aria-expanded="false"
+                /> */}
       </form>
       <div className="navbar__profile">
         <div className="navbar__login">
-          <div class="dropdown">
+
+          <div class="dropdown me-5">
             <img src="https://avatars.dicebear.com/api/avataaars/example.svg?options[top][]=shortHair&options[accessoriesChance]=93" width="30px" height="30px" style={{borderRadius:"50%"}}
             className="dropdown-toggle"
             data-bs-toggle="dropdown"

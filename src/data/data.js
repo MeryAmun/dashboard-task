@@ -2,12 +2,17 @@ import { Home, Settings,MessageSquare,Server} from 'react-feather';
 import { AiFillDashboard,AiOutlineMail,AiTwotoneFile,AiFillWarning } from 'react-icons/ai'
 import { SlCalender,SlGraph } from 'react-icons/sl'
 import { IoBugSharp,IoRocketSharp,IoCartOutline, IoCutOutline,IoTicketSharp,
-    //IoCardSharp,IoSettingsSharp
+    IoCardSharp,
+    //IoSettingsSharp
 } from 'react-icons/io5'
 //import { GrCart } from 'react-icons/gr'
 import { FaArrowsRotate,FaCartPlus,FaCircleArrowUp,FaFileContract,FaUsers,FaIdeal,FaRegMoneyBill1,
     
-   // FaArrowTrendUp, FaArrowTrendDown
+ FaArrowTrendUp, FaArrowTrendDown,
+ FaMoneyBillTrendUp,
+ FaMoneyCheck,
+ FaMoneyBillWheat
+
 } from 'react-icons/fa6'
 import { FaFileInvoice,FaTasks,
     
@@ -21,13 +26,91 @@ import { GoGoal,GoStack } from 'react-icons/go'
 import { BsExclamationCircle} from 'react-icons/bs'
 import { HiMiniUsers } from 'react-icons/hi2'
 import { HiOutlineQuestionMarkCircle} from 'react-icons/hi'
-//import { CgArrowLongRight} from 'react-icons/cg'
+import { CgArrowLongRight} from 'react-icons/cg'
 import { MdOutlineIndeterminateCheckBox } from 'react-icons/md'
 import { RiArrowDropDownLine, RiArrowDropUpLine} from 'react-icons/ri'
 import { FcDepartment, FcLeave} from 'react-icons/fc';
 
 
 
+
+export const clients = [
+    {
+        id:1,
+        name:"Ms. Sister Morar",
+        image:"https://avatars.dicebear.com/api/avataaars/Ms-Sister%20Morar.svg",
+        percentage:"34%",
+        iconOne:FaArrowTrendDown,
+        joinedOn:"Jun 11, 2022 @ veum.lucio",
+        color:"rgb(239, 68, 68)"
+    },
+    {
+        id:2,
+        name:"Ms. Laisha Reinger",
+        image:"https://avatars.dicebear.com/api/avataaars/Ms-Laisha%20Reinger.svg",
+        percentage:"72%",
+        iconOne:FaArrowTrendUp,
+        joinedOn:"Nov 2, 2022 @ edietrich",
+        color:"rgb(16, 185, 129)",
+    },
+    {
+        id:3,
+        name:"Cameron Lind",
+        image:"https://avatars.dicebear.com/api/avataaars/Cameron-Lind.svg",
+        percentage:"59%",
+        iconOne:CgArrowLongRight,
+        joinedOn:"Sep 14, 2022 @ mose44",
+        color:"rgb(234, 179, 8)",
+    },
+    {
+        id:4,
+        name:"Sarai Little",
+        image:"https://avatars.dicebear.com/api/avataaars/Sarai-Little.svg",
+        percentage:"49%",
+        iconOne:CgArrowLongRight,
+        joinedOn:"un 13, 2022 @ rau.abelardo",
+        color:"rgb(234, 179, 8)",
+    },
+]
+
+export const transactions = [
+    {
+        id:1,
+        accountType:"Home Loan Account",
+        action:"deposit",
+        done:"3 days ago via Turcotte",
+        amount:"$375.53",
+        paymentMethodIcon:FaMoneyBillTrendUp,
+        color:"rgb(16, 185, 129)",
+    },
+    {
+        id:2,
+        accountType:"Savings Account",
+        action:"Payment",
+        done:"3 days ago via Murazik - Graham",
+        amount:"$470.26",
+        paymentMethodIcon:IoCardSharp,
+        color:"rgb(59, 130, 246)"
+    },
+    {
+        id:3,
+        accountType:"Checking Account",
+        action:"Invoice",
+        done:"5 days ago via Fahey - Keebler",
+        amount:"$971.34",
+        paymentMethodIcon:FaMoneyCheck,
+        color:"rgb(234, 179, 8)",
+    },
+    {
+        id:4,
+        accountType:"Auto Loan Account",
+        action:"Withdraw",
+        done:"7 days ago via Collier - Hintz",
+        amount:"$374.63",
+        paymentMethodIcon:FaMoneyBillWheat,
+        color:"rgb(239, 68, 68)",
+    }
+]
 export const overViewData = [
     {
         iconOne:RiArrowDropUpLine,title:'Clients',qty:512,percentage:"12%",color:"rgb(16, 185, 129)",

@@ -4,12 +4,12 @@ const Badge = ({data}) => {
   return (
     <div className='d-flex justify-content-center align-items-center px-2 rounded' style={{backgroundColor:data.color}}>
         <data.iconOne
-              size={data.id === 111 ? 13 : 20}
+              size={data.id === 111 ? 13 : 15}
               color="white"
-              className=""
+              className="me-2"
               
             />
-            <span  className={data.id === 111 ? "ms-2 text-light": "text-light"} style={{fontSize:'13px'}}>{data.percentage}</span>
+            <span  className={data.id === 111 ? "text-light": "text-light"} style={{fontSize:'12px'}}>{data.percentage}</span>
     </div>
   )
 }
