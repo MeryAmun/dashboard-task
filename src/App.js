@@ -26,6 +26,7 @@ const handleActive = () => {
 }
   return (
     <div className="app">
+      <div className="subMain">
       <Menu
         size={30}
         color="black"
@@ -33,6 +34,7 @@ const handleActive = () => {
         onClick={handleActive}
       />
           <Sidebar change={changeWidth} previous={prevWidth} active={active}/>
+      </div>
           <div className="app__main" ref={mainApp}>
    <Navbar />
 

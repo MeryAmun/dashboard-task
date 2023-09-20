@@ -11,16 +11,22 @@
   width: 100;
   }
   
+  .home{
+    overflow-y: scroll;
+    height: 100vh;
+   }
   .app__main{
-    justify-self: flex-start;
+    justify-self: flex-end;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-     width: 78%;
-      height: 100%;
-
+     width: 80%;
      
+  }
+  .subMain{
+    width: 20%;
+    height: 100%;
   }
   .navbar__menuIcon{
     margin-left: 1rem;
@@ -37,7 +43,7 @@
 }
 }
   /* .home{
-    border: 2px solid yellowgreen;
+   overflow-y: scroll;
   } */
 
 @keyframes App-logo-spin {

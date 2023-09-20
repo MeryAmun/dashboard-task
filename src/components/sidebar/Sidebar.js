@@ -19,7 +19,7 @@ const Sidebar = ({active}) => {
        ref={sidebarWidth}>
       <div className="sidebar__logoContainer">
        <div className="sidebar__logoBox">
-        <Link to='/' className="sidebar__LogoLink">
+        <Link to='/' className="sidebar__LogoLink" style={{fontSize:"15px"}}>
          Erp
         </Link>
        </div>

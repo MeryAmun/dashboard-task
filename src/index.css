@@ -10,6 +10,9 @@ html{
 
 ::-webkit-scrollbar{
   display: none;
+  /* background-color: red;
+  height: 50vh;
+  width: 10px; */
 }
 body {
   margin: 0;

@@ -7,7 +7,7 @@ import TransactionsCard from '../components/cards/TransactonsCard'
 
 export const Home = () => {
   return (
-    <div className='home w-100 h-100 bg-gray-50 py-4'>
+    <div className='home w-100 bg-gray-50 py-4'>
     <div className="home__overview w-100">
         <div className="d-flex justify-content-start align-items-center px-4">
         <SlGraph
