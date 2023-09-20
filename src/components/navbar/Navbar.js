@@ -38,8 +38,7 @@ const Navbar = () => {
             alt="" />
             <span
               className="mx-2 dropdown-toggle"
-             
-      
+          
               data-bs-toggle="dropdown"
               aria-expanded="false"
             >

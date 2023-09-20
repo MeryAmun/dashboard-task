@@ -50,6 +50,14 @@
 .dropdown-toggle{
     cursor: pointer;
 }
+
+.btn:focus {
+    outline: none !important;
+    outline-offset: none !important;
+}
+.dropdown-toggle::after {
+    display: none !important; 
+}
 .navbar__loginLink{
     border: 1px solid #f24443;
     border-radius: 20px;
