@@ -20,12 +20,11 @@ const Navbar = ({handleActive}) => {
         className="navbar__menuIcon"
         onClick={handleActive}
       />
-      <form className="d-flex px-2" role="search">
+      <form className="d-flex px-2">
         <input
-          className="form-control me-2"
-          type="search"
+          className="me-2"
           placeholder="Search"
-          aria-label="Search"
+          
         />
       </form>
     <div className="me-2 d-flex flex-row-reverse justify-content-center align-items-center" style={{width:"20%", justifySelf:"flex-end"}}>
