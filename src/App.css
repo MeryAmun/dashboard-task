@@ -8,6 +8,7 @@
   width: 100;
   }
   
+  .calendar,
   .home{
     overflow-y: scroll;
     height: 100vh;
@@ -70,9 +71,73 @@
   padding: 10px 5px;
 }
 }
-  /* .home{
-   overflow-y: scroll;
-  } */
+
+
+  .eventForm{
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  input,textarea{
+    width: 100%;
+    padding: 10px 20px;
+    border: none;
+    margin: 10px;
+    font-size: 13px;
+    border-radius: 10px;
+    outline: none;
+  }
+  .saveButton{
+    padding: 10px 30px;
+    outline: none;
+    border: none;
+    background-color: #033A53;
+    color: #ffffff;
+    border-radius: 10px;
+  }
+  .closeButton{
+    padding: 10px 30px;
+    outline: none;
+    border: none;
+    background-color:transparent;
+    color: #ffffff;
+    border-radius: 10px;
+  }
+  
+  
+  .Modal {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    right: 40px;
+    bottom: 40px;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .Overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(31, 29, 32,0.9);
+    z-index: 10;
+  }
+  
+  .form-group{
+    width: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0px;
+  }
 
 @keyframes App-logo-spin {
   from {

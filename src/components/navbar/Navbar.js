@@ -16,7 +16,7 @@ const Navbar = ({handleActive}) => {
     <nav className="navbar navbar-expand-lg d-flex justify-content-between align-items-center w-100" >
        <Menu
         size={30}
-        color="black"
+      
         className="navbar__menuIcon"
         onClick={handleActive}
       />
@@ -46,12 +46,12 @@ const Navbar = ({handleActive}) => {
           <img src="https://avatars.dicebear.com/api/avataaars/example.svg?options[top][]=shortHair&options[accessoriesChance]=93" width="25em" height="25em" style={{borderRadius:"50%"}}
             alt="" />
             <span
-              className="btn dropdown-toggle"
+              className="btn dropdown-toggle border-0"
             type="button"
               data-bs-toggle="dropdown"
               aria-expanded="false"
             >
-              <span className="active" aria-current="page" onClick={() => setToggleArrow(!toggleArrow)}>{"Bruce"}</span>
+              <span className="active icon-link-hover link-item" aria-current="page" onClick={() => setToggleArrow(!toggleArrow)}>{"Bruce"}</span>
               
             </span>
             {
@@ -69,37 +69,37 @@ const Navbar = ({handleActive}) => {
               }
            <ul className="dropdown-menu">
               <li className="d-flex justify-content-around align-items-center p-2">
-                <FaUserAlt size={15} color="black" />
+                <FaUserAlt size={15} className="link-icon"/>
                 <Link
                   to="/profile"
-                  className="fs-6 text-decoration-none text-secondary-emphasis"
+                  className=" link-item text-decoration-none"
                 >
                   My Profile
                 </Link>
               </li>
               <li className="d-flex justify-content-around align-items-center p-2">
-                <IoSettingsOutline size={15} color="black" />
+                <IoSettingsOutline size={15} className="link-icon"/>
                 <Link
                   to="/settings"
-                  className="fs-6 text-decoration-none text-secondary-emphasis"
+                  className=" link-item text-decoration-none"
                 >
                   Settings
                 </Link>
               </li>
               <li className="d-flex justify-content-around align-items-center p-2">
-                <IoMail size={15} color="black" />
+                <IoMail size={15} className="link-icon"/>
                 <Link
                   to="/messages"
-                  className="fs-6 text-decoration-none text-secondary-emphasis"
+                  className=" link-item text-decoration-none"
                 >
                   Messages
                 </Link>
               </li>
               <li className="d-flex justify-content-around align-items-center p-2">
-                <IoLogOutOutline size={15} color="black" />
+                <IoLogOutOutline size={15} className="link-icon"/>
                 <Link
                   to="/profile"
-                  className="fs-6 text-decoration-none text-secondary-emphasis"
+                  className=" link-item text-decoration-none"
                 >
                   Log Out
                 </Link>

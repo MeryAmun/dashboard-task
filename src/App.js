@@ -4,6 +4,7 @@ import { Routes, Route , } from 'react-router';
 import  Sidebar from "./components/sidebar/Sidebar";
 import Navbar from "./components/navbar/Navbar";
 import { Home } from './screens/Home';
+import { CustomCalender } from './components/calendar/index';
 
 function App() {
   const mainApp =useRef();
@@ -58,6 +59,7 @@ const handleActive  = () => {
 
      <Routes>
       <Route exact path='/' element={<Home/>}/>
+      <Route exact path='/calendar' element={<CustomCalender/>}/>
      </Routes>
 </div> 
     </div>

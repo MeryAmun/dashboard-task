@@ -3,21 +3,52 @@ form,input{
     outline: none;
     background-color: transparent;
 }
+
+.link-icon{
+color: black;
+}
+
+.link-item{
+font-size: 13px;
+color: black;
+}
+
+li:hover > .link-icon,
+li:hover > .link-item{
+color: rgb(59, 130, 246);
+cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .navbar__icons{
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+
 .navbar__icon{
    margin: 1rem;
     color: #565656;
     cursor: pointer;
 }
-.navbar__icon:hover{
-    /* background-color: rgba(242,68,67,.08); */
-    color: #f24443;
-}
+
 
 .navbar__link{
     display: flex;

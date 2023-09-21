@@ -141,7 +141,7 @@ export const sideBarData = [
         icon:AiFillDashboard,title:'Dashboard',link:'/',id:1
     },
     {
-        icon:SlCalender,title:'Calender',link:'/calender',id:2
+        icon:SlCalender,title:'Calendar',link:'/calendar',id:2
     },
     {
         icon:FaFileInvoice,title:'Invoice',link:'/invoice',id:3
