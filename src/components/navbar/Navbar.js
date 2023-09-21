@@ -13,7 +13,7 @@ const Navbar = ({handleActive}) => {
   console.log(bars);
 
   return (
-    <nav className="navbar navbar-expand-lg d-flex justify-content-between align-items-center" >
+    <nav className="navbar navbar-expand-lg d-flex justify-content-between align-items-center w-100" >
        <Menu
         size={30}
         color="black"
@@ -44,14 +44,11 @@ const Navbar = ({handleActive}) => {
       <div className="navbar-collapse collapse show" id="navbarScroll">
         <ul className="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll">
           <li className="nav-item dropdown">
-          <img src="https://avatars.dicebear.com/api/avataaars/example.svg?options[top][]=shortHair&options[accessoriesChance]=93" width="25px" height="25px" style={{borderRadius:"50%"}}
-            className="dropdown-toggle"
-            data-bs-toggle="dropdown"
-            aria-expanded="false" 
+          <img src="https://avatars.dicebear.com/api/avataaars/example.svg?options[top][]=shortHair&options[accessoriesChance]=93" width="25em" height="25em" style={{borderRadius:"50%"}}
             alt="" />
             <span
-              className="mx-2 dropdown-toggle"
-          
+              className="btn dropdown-toggle"
+            type="button"
               data-bs-toggle="dropdown"
               aria-expanded="false"
             >

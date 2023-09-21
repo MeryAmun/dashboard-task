@@ -8,7 +8,7 @@ const Badge = ({data}) => (
               className="me-2"
               
             />
-            <span  className={data.id === 111 ? "text-light": "text-light"} style={{fontSize:'12px'}}>{data.percentage ? data.percentage : data.action}</span>
+            <span  className="" style={{fontSize:'12px', color:"rgba(255,255,255,1)"}}>{data.percentage ? data.percentage : data.action}</span>
     </div>
   )
 
@@ -18,6 +18,6 @@ export default Badge
 
 export const SecondBadge = ({data}) => (
     <div className='d-flex justify-content-center align-items-center px-3  py-1' style={{backgroundColor:data.color, borderRadius:"10px"}}>
-            <span  className={data.id === 111 ? "text-light": "text-light"} style={{fontSize:'12px'}}>{data.percentage ? data.percentage : data.action}</span>
+            <span  className="" style={{fontSize:'12px', color:"rgba(255,255,255,1)"}}>{data.percentage ? data.percentage : data.action}</span>
     </div>
   )

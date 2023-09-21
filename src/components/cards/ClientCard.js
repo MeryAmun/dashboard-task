@@ -7,7 +7,7 @@ const ClientCard = ({data}) => {
         <div className="d-flex justify-content-start align-items-center w-100">
           <div className="mx-2 bg-gray-100" style={{borderRadius:"50%" , backgroundColor:"rgb(231, 221, 221)", width:"40px", height:"40px", objectFit:"cover"}}>
           <img src={data.image} 
-            alt="" width="40px" height="40px"/>
+            alt="" width="35em" height="35em"/>
           </div>
             <div className="d-flex flex-column justify-content-between align-items-start ms-2">
                 <span className="fs-6 text-secondary">{data.name}</span>
