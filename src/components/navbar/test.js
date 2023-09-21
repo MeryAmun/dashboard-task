@@ -13,8 +13,8 @@ const Navbar = ({handleActive}) => {
   console.log(bars);
 
   return (
-    <nav className="navbar navbar-expand-lg d-flex justify-content-between align-items-center" >
-       <Menu
+    <div className="navbar">
+      <Menu
         size={30}
         color="black"
         className="navbar__menuIcon"
@@ -27,24 +27,19 @@ const Navbar = ({handleActive}) => {
           placeholder="Search"
           aria-label="Search"
         />
-      </form>
-    <div className="me-2 d-flex flex-row-reverse justify-content-center align-items-center" style={{width:"20%", justifySelf:"flex-end"}}>
-      
-      <div className="navbar-collapse collapse show" id="navbarScroll">
-        <div className="d-flex">
-        <div className="container-fluid d-flex justify-content-between align-items-center">
-        {/* <BsThreeDotsVertical
+         {/* <BsThreeDotsVertical
                   size={25}
                   color="rgb(59, 130, 246)"
-                  className="navbar-toggler"  data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="true" aria-label="Toggle navigation"
+             className="mobile-dots"
+              // data-bs-toggle="dropdown"
+              // aria-expanded="false"
                 /> */}
-      <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="true" aria-label="Toggle navigation">
-        <span className="navbar-toggler-icon"></span>
-      </button>
-      <div className="navbar-collapse collapse show" id="navbarScroll">
-        <ul className="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll">
-          <li className="nav-item dropdown">
-          <img src="https://avatars.dicebear.com/api/avataaars/example.svg?options[top][]=shortHair&options[accessoriesChance]=93" width="25px" height="25px" style={{borderRadius:"50%"}}
+      </form>
+      <div className="navbar__profile">
+        <div className="navbar__login">
+
+          <div class="dropdown me-5">
+            <img src="https://avatars.dicebear.com/api/avataaars/example.svg?options[top][]=shortHair&options[accessoriesChance]=93" width="25px" height="25px" style={{borderRadius:"50%"}}
             className="dropdown-toggle"
             data-bs-toggle="dropdown"
             aria-expanded="false" 
@@ -63,15 +58,20 @@ const Navbar = ({handleActive}) => {
                 <RiArrowDropDownLine
                   size={25}
                   color="rgb(59, 130, 246)"
+              //     className="dropdown-toggle"
+              // data-bs-toggle="dropdown"
+              // aria-expanded="false"
                 />) : (
                   <RiArrowDropUpLine
               size={25}
               color={!toggleArrow ? "black": "rgb(59, 130, 246)"}
               className="active"
+              // data-bs-toggle="dropdown"
+              // aria-expanded="false"
             />
                 )
               }
-           <ul className="dropdown-menu">
+            <ul class="dropdown-menu">
               <li className="d-flex justify-content-around align-items-center p-2">
                 <FaUserAlt size={15} color="black" />
                 <Link
@@ -109,14 +109,13 @@ const Navbar = ({handleActive}) => {
                 </Link>
               </li>
             </ul>
-          </li>
-        </ul>
+          </div>
         </div>
-        </div>
-      </div>
+        {/* <FlagsMenu />
+        <Moon size={20} className="navbar__icon" /> */}
+        
       </div>
     </div>
-  </nav>
   );
 };
 export default Navbar;

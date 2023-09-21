@@ -6,7 +6,7 @@ import Badge from "./Badge";
 
 const OverViewCard = ({data}) => {
   return (
-    <div className="d-flex flex-column justify-content-between align-items-center px-3 py-2 gap-20 ms-1" style={{width:"280px", height:"150px",backgroundColor:"white", borderRadius:"10px"}}>
+    <div className="overViewCard d-flex flex-column justify-content-between align-items-center px-3 py-2 gap-20 ms-1" style={{width:"280px", height:"150px",backgroundColor:"white", borderRadius:"10px",flex:"1"}}>
       <div className="d-flex justify-content-between align-items-center w-100">
         <Badge data={data}/>
        <span type="btn" style={{backgroundColor:"rgba(217, 218, 223, 0.6)", padding:"2px 5px", borderRadius:"5px"}}>

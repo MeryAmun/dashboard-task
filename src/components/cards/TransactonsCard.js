@@ -3,7 +3,7 @@ import { SecondBadge } from './Badge'
 
 const TransactionsCard = ({data}) => {
   return (
-    <div className="d-flex justify-content-between align-items-start px-3 py-2" style={{width:"450px", height:"100px",backgroundColor:"white", borderRadius:"10px"}}>
+    <div className="transactionCard d-flex justify-content-between align-items-start px-3 py-2" style={{width:"450px", height:"100px",backgroundColor:"white", borderRadius:"10px"}}>
     <div className="d-flex justify-content-start align-items-center w-100" style={{height:"100%"}}>
       <div className="mx-2 bg-gray-100" style={{width:"45px", height:"45px",
       display:"flex",justifyContent:"center",alignItems:"center",
@@ -17,7 +17,10 @@ const TransactionsCard = ({data}) => {
       </div>
         <div className="d-flex flex-column justify-content-between align-items-start ms-2" style={{height:"80%"}}>
             <span className="fs-6 text-secondary">{data.amount}</span>
-            <span className="text-secondary-emphasis my-2" style={{fontSize:"14px"}}>{data.timestamp}</span>
+            <span className="text-secondary-emphasis my-2" style={{fontSize:"14px"}}>
+              <strong>{data.timestamp}</strong>
+            {data.via}
+            </span>
         </div>
     </div>
     <div className="d-flex flex-column justify-content-between align-items-end ms-2 w-50" style={{height:"100%"}}> 

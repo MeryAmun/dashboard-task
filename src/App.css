@@ -1,11 +1,8 @@
-.App {
-  text-align: center;
-}
 
 .app{
   display: flex;
   background-color: #f8f8f8;
-  justify-content: space-evenly;
+  justify-content: flex-start;
   align-items: flex-start;
   height: 100%;
   width: 100;
@@ -17,29 +14,60 @@
    }
   .app__main{
     justify-self: flex-end;
+    align-self: flex-end;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-     width: 80%;
+     /* flex: 0.8; */
+     width: auto;
      
   }
+ 
   .subMain{
-    width: 20%;
-    height: 100%;
+    /* flex: 0.2; */
+    width:20%;
+    height: 100vh;
+    margin: 0;
   }
   .navbar__menuIcon{
     margin-left: 1rem;
     display: none;
     cursor: pointer;
 }
-
+.overViewCard{width:"280px"; height:"150px";background-color:"white"; border-radius:"10px";}
 @media screen and (max-width: 576px) {
   .navbar__menuIcon{
-   position: relative;
-   margin-top: 40px;
+    display: block;
   align-self: flex-start;
     cursor: pointer;
+}
+.overViewCard,
+.clientCard,
+.transactionCard{
+  width: 80%;
+}
+.sidebar__wrapper{
+  width: 0px;
+  position: absolute;
+    left: -230px;
+}
+.clients{
+  flex-direction: column;
+}
+.subMain{
+/* display: none;
+  left: -10px;
+  z-index: 1036; */
+  display: none;
+  width: 20%;
+  position: absolute;
+    left: -20%;
+    margin-top: 90px;
+
+}
+.app{
+  padding: 10px 5px;
 }
 }
   /* .home{
@@ -54,3 +82,4 @@
     transform: rotate(360deg);
   }
 }
+
