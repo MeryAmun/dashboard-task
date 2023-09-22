@@ -5,6 +5,7 @@ import  Sidebar from "./components/sidebar/Sidebar";
 import Navbar from "./components/navbar/Navbar";
 import { Home } from './screens/Home';
 import { CustomCalender } from './components/calendar/index';
+import FileManager from './components/FileManager/FileManager';
 
 function App() {
   const mainApp =useRef();
@@ -50,7 +51,7 @@ const handleActive  = () => {
  }
   return (
     <div className="app">
-      <div className="subMain" ref={sidebarWidth} onClick={handleActive}>
+      <div className="subMain" ref={sidebarWidth}>
           <Sidebar change={changeWidth} previous={prevWidth} active={active}  ref={sidebarWidth}/>
           {/* sidebar */}
       </div>
@@ -60,6 +61,7 @@ const handleActive  = () => {
      <Routes>
       <Route exact path='/' element={<Home/>}/>
       <Route exact path='/calendar' element={<CustomCalender/>}/>
+      <Route exact path='/file-manager' element={<FileManager/>}/>
      </Routes>
 </div> 
     </div>

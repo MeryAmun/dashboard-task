@@ -12,6 +12,9 @@ color: black;
 font-size: 13px;
 color: black;
 }
+.link-item:hover{
+color: rgb(59, 130, 246);
+}
 
 li:hover > .link-icon,
 li:hover > .link-item{

@@ -144,6 +144,9 @@ export const sideBarData = [
         icon:SlCalender,title:'Calendar',link:'/calendar',id:2
     },
     {
+        icon:AiTwotoneFile,title:'File Manager',link:'/file-manager',id:5
+    },
+    {
         icon:FaFileInvoice,title:'Invoice',link:'/invoice',id:3
     },
     {
@@ -181,9 +184,6 @@ export const sideBarData = [
     },
     {
         icon:FaBars,title:'Projects',link:'/projects',id:4
-    },
-    {
-        icon:AiTwotoneFile,title:'File Manager',link:'/files',id:5
     },
     {
         icon:FaArrowsRotate,title:'Xero',link:'/xero',id:7
