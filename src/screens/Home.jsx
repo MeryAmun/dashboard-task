@@ -7,7 +7,7 @@ import TransactionsCard from '../components/cards/TransactonsCard'
 import { IoSettingsSharp } from "react-icons/io5";
 import { HiMiniUsers } from 'react-icons/hi2'
 
-export const Home = () => {
+const Home = () => {
   return (
     <div className='home w-100 bg-gray-50 py-4'>
     <div className="home__overview w-100">
@@ -68,3 +68,4 @@ export const Home = () => {
     </div>
   )
 }
+export default Home

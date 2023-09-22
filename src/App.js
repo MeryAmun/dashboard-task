@@ -3,7 +3,7 @@ import './App.css';
 import { Routes, Route , } from 'react-router';
 import  Sidebar from "./components/sidebar/Sidebar";
 import Navbar from "./components/navbar/Navbar";
-import { Home } from './screens/Home';
+import { Home, UsersScreen } from './screens/index';
 import { CustomCalender } from './components/calendar/index';
 import FileManager from './components/FileManager/FileManager';
 
@@ -62,6 +62,7 @@ const handleActive  = () => {
       <Route exact path='/' element={<Home/>}/>
       <Route exact path='/calendar' element={<CustomCalender/>}/>
       <Route exact path='/file-manager' element={<FileManager/>}/>
+      <Route exact path='/users' element={<UsersScreen/>}/>
      </Routes>
 </div> 
     </div>

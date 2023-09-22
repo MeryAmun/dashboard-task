@@ -19,10 +19,12 @@
   width: 100;
   }
   
+  .userScreen,
   .calendar,
   .home{
     overflow-y: scroll;
     height: 100vh;
+    /* border: 2px solid yellowgreen; */
    }
   .app__main{
     justify-self: flex-end;
@@ -32,13 +34,13 @@
       justify-content: center;
       align-items: center;
      /* flex: 0.8; */
-     width: 80%;
+     width: 81%;
      
   }
  
   .subMain{
     /* flex: 0.2; */
-    width:20%;
+    width:19%;
     height: 100vh;
     margin: 0;
   }
