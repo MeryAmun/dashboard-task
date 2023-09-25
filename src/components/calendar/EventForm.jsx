@@ -47,6 +47,7 @@ const EventForm = ({ setEvents, events, formData, closeModal }) => {
           value={form.title}
           onChange={handleFormFieldChange}
           required
+          className="eventForm"
         />
       </div>
       <div className="form-group">
@@ -57,6 +58,7 @@ const EventForm = ({ setEvents, events, formData, closeModal }) => {
           value={form.start}
           onChange={handleFormFieldChange}
           required
+          className="eventForm"
         />
         <input
           type="time"
@@ -65,6 +67,7 @@ const EventForm = ({ setEvents, events, formData, closeModal }) => {
           value={form.startStr}
           onChange={handleFormFieldChange}
           required
+          className="eventForm"
         />
       </div>
       <div className="form-group">
@@ -75,6 +78,7 @@ const EventForm = ({ setEvents, events, formData, closeModal }) => {
           value={form.end}
           onChange={handleFormFieldChange}
           required
+          className="eventForm"
         />
         <input
           type="time"
@@ -83,6 +87,7 @@ const EventForm = ({ setEvents, events, formData, closeModal }) => {
           value={form.endStr}
           onChange={handleFormFieldChange}
           required
+          className="eventForm"
         />
       </div>
       <button className="saveButton" onClick={handleSubmit}>

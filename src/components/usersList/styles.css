@@ -61,3 +61,117 @@ cursor: pointer;
     cursor: pointer;
     border: 1px solid rgb(231, 227, 227);
 }
+
+/* =======================CREATE NEW USER ================================================ */
+.wrapper{
+    background-color: rgb(235, 231, 231);
+}
+.userScreen_header{
+    background-color: #DCE5E7;
+    color: #656565;
+}
+
+.form_input{
+width: 100%;
+border: 2px solid #DCE5E7;
+padding: 5px 0;
+
+    
+  }
+  .input_label{
+    width: 40%;
+    /* padding: 3px 10px; */
+    margin-right: 10px;
+    text-align: end;
+    font-size: 14px;
+    font-weight: 700;
+    color: rgb(101, 101, 101);
+  }
+  .permissionInput_label{
+    width: 40%;
+    /* padding: 3px 10px; */
+    margin-right: 10px;
+    text-align: end;
+    font-size: 14px;
+    font-weight: 700;
+    color: rgb(101, 101, 101);
+  }
+  .photo_label{
+    width: 30%;
+    /* padding: 3px 10px; */
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+    padding-right:10px;
+    color: rgb(101, 101, 101);
+  }
+  .createWarehouse_btn{
+   padding: 6.5px 8px;
+   border: none;
+   outline: none;
+   background-color: #DCE5E7;
+  }
+
+  input[type="radio"] {
+    /* Add if not using autoprefixer */
+    -webkit-appearance: none;
+    appearance: none;
+    /* For iOS < 15 to remove gradient background */
+    background-color: #fff;
+    /* Not removed via appearance */
+    margin: 0;
+  }
+
+  input[type="radio"] {
+    appearance: none;
+    background-color: #fff;
+    margin: 0;
+    font: inherit;
+    color: rgb(59, 130, 246);
+    width: 1.15em;
+    height: 1.15em;
+    border: 0.15em solid rgb(59, 130, 246);
+    border-radius: 50%;
+    transform: translateY(-0.075em);
+  }
+
+  input[type="radio"]::before {
+    content: "";
+    width: 0.55em;
+    height: 0.55em;
+    border-radius: 50%;
+    transform: scale(0);
+    transition: 120ms transform ease-in-out;
+    box-shadow: inset 1em 1em var(--form-control-color);
+  }
+
+  input[type="radio"] {
+    /* ...existing styles */
+    display: grid;
+    place-content: center;
+  }
+  
+  input[type="radio"]::before {
+    content: "";
+    width: 0.55em;
+    height: 0.55em;
+    border-radius: 50%;
+    transform: scale(0);
+    transition: 120ms transform ease-in-out;
+    box-shadow: inset 1em 1em var(--form-control-color);
+  }
+  
+  input[type="radio"]:checked::before {
+    transform: scale(1);
+  }
+
+  input[type="radio"]::before {
+    /* ...existing styles */
+  
+    /* Windows High Contrast Mode */
+    background-color: rgb(59, 130, 246);
+  }
+
+  ::placeholder{
+   padding-left: 10px;
+  }
