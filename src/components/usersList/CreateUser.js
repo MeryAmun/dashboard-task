@@ -45,7 +45,7 @@ const createWarehouse = () =>{
       </div>
       <div className="d-flex  my-1 justify-content-between align-items-center  w-50">
         <label htmlFor="" className='input_label'>Employment ID</label>
-       <input type="text" placeholder='e.g Enter Your Employment ID' name="employmentId" value={formData.employmentId} className='form_input'
+       <input type="text" placeholder='e.g 15425' name="employmentId" value={formData.employmentId} className='form_input'
        onChange={handleChange} required/>
       </div>
       <div className="d-flex  my-1 justify-content-between align-items-center  w-50">
@@ -159,7 +159,9 @@ const createWarehouse = () =>{
         </div>
       </div>
       <div className="align-self-end me-4">
-        <button className="btn text-light" type='submit' style={{backgroundColor:"#1797BE"}}>Create User</button>
+        <button className="btn text-light" type='submit' 
+        onClick={handleCreateUser}
+        style={{backgroundColor:"#1797BE"}}>Create User</button>
       </div>
     </div>
   )

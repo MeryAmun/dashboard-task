@@ -12,43 +12,45 @@
 
 .app{
   display: flex;
+  flex-direction: column;
   background-color: #f8f8f8;
   justify-content: flex-start;
   align-items: flex-start;
   height: 100%;
-  width: 100;
+  width: 100%;
   }
   
   .userScreen,
   .calendar,
   .home{
+    padding: 20xp 10px;
     overflow-y: scroll;
     height: 100vh;
     /* border: 2px solid yellowgreen; */
    }
   .app__main{
-    justify-self: flex-end;
-    align-self: flex-end;
+    /* border: 2px solid rgb(17, 24, 39); */
       display: flex;
-      flex-direction: column;
-      justify-content: center;
+      flex-direction: row;
+      justify-content: flex-start;
       align-items: center;
      /* flex: 0.8; */
-     width: 81%;
+     width:100%;
      
   }
- 
+ .sidebarContainer{
+width: 190px;
+height: 100%;
+ }
   .subMain{
     /* flex: 0.2; */
-    width:19%;
+    /* width:19%;
     height: 100vh;
-    margin: 0;
+    margin: 0; */
+    justify-self: center;
+    flex: 1;
   }
-  .navbar__menuIcon{
-    margin-left: 1rem;
-    display: none;
-    cursor: pointer;
-}
+
 .overViewCard{width:"280px"; height:"150px";background-color:"white"; border-radius:"10px";}
 @media screen and (max-width: 576px) {
   .navbar__menuIcon{

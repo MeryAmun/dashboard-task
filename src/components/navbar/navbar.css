@@ -1,13 +1,37 @@
+
+.navbar_container{
+    background-color: #1797BE;
+    padding: 0;
+}
+
 form,input{
     border: none;
     outline: none;
     background-color: transparent;
 }
-
+::placeholder{
+    color: #fff;
+}
 .link-icon{
 color: black;
 }
 
+.navbar__menuIcon{
+    margin-left: 1rem;
+    cursor: pointer;
+}
+
+.navbarFooter__title{
+font-size: 24px;
+font-weight: 400;
+line-height: 26.4px;
+ color: rgb(116, 134, 144);
+}
+.navbar_clock{
+font-size: 13px;
+font-weight: 400;
+color: rgb(146, 146, 146)
+}
 .link-item{
 font-size: 13px;
 color: black;

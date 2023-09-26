@@ -55,7 +55,7 @@ export const usersData = [
     image: "https://avatars.dicebear.com/api/avataaars/Ms-Laisha%20Reinger.svg",
     name: "MD Nayeem",
     username: "admin",
-    status: "Active",
+    activeStatus: "Active",
     userType: "Admin",
   },
   {
@@ -63,7 +63,7 @@ export const usersData = [
     image: "https://avatars.dicebear.com/api/avataaars/Cameron-Lind.svg",
     name: "John Francois",
     username: "client",
-    status: "",
+    activeStatus: "Active",
     userType: "Client",
   },
   {
@@ -71,7 +71,7 @@ export const usersData = [
     image: "https://avatars.dicebear.com/api/avataaars/Ms-Sister%20Morar.svg",
     name: "Melody S. Price",
     username: "Spir1977",
-    status: "",
+    activeStatus: "Inactive",
     userType: "Client",
   },
   {
@@ -79,7 +79,7 @@ export const usersData = [
     image: "https://avatars.dicebear.com/api/avataaars/Ms-Sister%20Morar.svg",
     name: "Darren C. Bryant",
     username: "Bryant",
-    status: "",
+    activeStatus: "Inactive",
     userType: "Staff",
   },
   {
@@ -87,7 +87,7 @@ export const usersData = [
     image: "https://avatars.dicebear.com/api/avataaars/Cameron-Lind.svg",
     name: "ohfsduhdfs",
     username: "rmccroger",
-    status: "",
+    activeStatus: "Inactive",
     userType: "Client",
   },
   {
@@ -95,7 +95,7 @@ export const usersData = [
     image: "https://avatars.dicebear.com/api/avataaars/Ms-Sister%20Morar.svg",
     name: "hrr",
     username: "hrr",
-    status: "",
+    activeStatus: "Inactive",
     userType: "Staff",
   },
   {
@@ -103,7 +103,7 @@ export const usersData = [
     image: "https://avatars.dicebear.com/api/avataaars/Cameron-Lind.svg",
     name: "New",
     username: "newnew",
-    status: "",
+    activeStatus: "Inactive",
     userType: "Client",
   },
   {
@@ -111,7 +111,7 @@ export const usersData = [
     image: "https://avatars.dicebear.com/api/avataaars/Cameron-Lind.svg",
     name: "Orla Whitley",
     username: "tacys",
-    status: "",
+    activeStatus: "Inactive",
     userType: "Admin",
   },
   {
@@ -119,7 +119,7 @@ export const usersData = [
     image: "https://avatars.dicebear.com/api/avataaars/Cameron-Lind.svg",
     name: "Abdi Osman",
     username: "abdzoro",
-    status: "",
+    activeStatus: "Inactive",
     userType: "Client",
   },
 ];

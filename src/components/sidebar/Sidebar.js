@@ -12,7 +12,7 @@ import { IoSearch } from 'react-icons/io5'
 // }
 const Sidebar = ({active}) => {
   const [activeId, setActiveId] = useState(null);
-  const [online, setOnline] = useState(true)
+  //const [online, setOnline] = useState(true)
   const sidebarWidth = useRef();
 
  
@@ -23,16 +23,13 @@ const Sidebar = ({active}) => {
        ref={sidebarWidth}>
       <div className="sidebar__logoContainer">
        <div className="sidebar__logoBox">
-        <Link to='/' className="sidebar__LogoLink my-3" style={{fontSize:"15px"}}>
-         Erp
-        </Link>
-        <div className="w-100">
-        <div className="d-flex justify-content-center align-items-center w-100">
+     
+        <div className="d-flex justify-content-center align-items-center w-100 mt-4">
         <img src={userAvatar} alt="" width="80px" height="80px" className='my-1'
         style={{borderRadius:"50%"}}
         />
         <GoDotFill size={25} color='yellowgreen' className='online_indicator'/>
-        </div>
+      
        </div>
        <span className='username my-1'>{"Chebesi Awah"}</span>
        <Link to='/user/:id' className="onlineText">online</Link>
@@ -50,11 +47,11 @@ const Sidebar = ({active}) => {
 <div className= { activeId === link.id ? "sidebar__linkContainer sidebar__linkContainerActive" : "sidebar__linkContainer"}
       onClick={() => setActiveId(link.id)
       }>
-      <Link to={link.link} className="sidebar__link">
+      <Link to={link.link} className={ activeId === link.id ? "sidebar__link linkTitleActive":"sidebar__link"}>
       {
         <link.icon size={15} className={ activeId === link.id ? 'sidebar__linkIcon sidebar__iconAnd__sidebarIconNameActive': 'sidebar__linkIcon'}/>
       }
-    <span className={ activeId === link.id ? 'sidebar__linkTitle linkTitleActive text-rgb(23, 151, 190)': 'sidebar__linkTitle '}>
+    <span className={ activeId === link.id ? 'sidebar__linkTitle  text-rgb(23, 151, 190)': 'sidebar__linkTitle '}>
       {link.title}
       </span>
       </Link>

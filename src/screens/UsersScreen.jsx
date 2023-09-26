@@ -4,7 +4,7 @@ import UsersList from '../components/usersList/UsersList';
 import CreateUser from '../components/usersList/CreateUser';
 
 const UsersScreen = () => {
-    const [active, setActive] = useState("New User");
+    const [active, setActive] = useState("All Users");
     const handleTabs = () => {
      if( active === "All Users" ){
 setActive("New User")
