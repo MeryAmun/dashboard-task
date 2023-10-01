@@ -7,7 +7,7 @@ import { FaUserAlt } from "react-icons/fa";
 import { IoSettingsOutline, IoMail, IoLogOutOutline } from "react-icons/io5";
 import { RiArrowDropDownLine, RiArrowDropUpLine } from "react-icons/ri";
 import { Menu } from "react-feather";
-import { navbarLogo, userAvatar } from "../../assets";
+import { userAvatar } from "../../assets";
 import { FiBell } from "react-icons/fi";
 import { BsPlusCircleFill } from "react-icons/bs";
 import { FaFlag } from "react-icons/fa6";
@@ -29,11 +29,11 @@ const Navbar = ({ handleActive, current }) => {
           style={{
             width: "190px",
             height: "69px",
-            backgroundColor: "rgb(17, 24, 39)",
+            backgroundColor: "#000",
             margin: "0",
           }}
         >
-          <img src={navbarLogo} alt="" width="100%" height="100%" />
+          {/* <img src={navbarLogo} alt="" width="100%" height="100%" /> */}
         </div>
         <div
           className="d-flex justify-content-between align-items-center "
@@ -188,7 +188,18 @@ const Navbar = ({ handleActive, current }) => {
         </div>
       </nav>
       <div className="w-100 d-flex justify-content-between align-items-center bg-light p-0">
-        <span className="navbarFooter__title" style={{ marginLeft: "250px" }}>
+      <div
+          className=""
+          style={{
+            width: "189px",
+            height: "69px",
+            backgroundColor: "#000",
+            margin: "0",
+          }}
+        >
+          {/* <img src={navbarLogo} alt="" width="100%" height="100%" /> */}
+        </div>
+        <span className="navbarFooter__title">
           {current}
         </span>
         <div

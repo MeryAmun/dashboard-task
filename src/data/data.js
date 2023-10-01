@@ -49,6 +49,30 @@ import { RiArrowDropDownLine, RiArrowDropUpLine } from "react-icons/ri";
 import { FcDepartment, FcLeave } from "react-icons/fc";
 import { PiUsersFourFill } from "react-icons/pi";
 
+
+export const lineData = [ 
+  {
+ labels: ['2011 Q1', '2011 Q2', '2011 Q3', '2011 Q4','2012 Q1', '2012 Q2', '2012 Q3', '2012 Q4'],
+  datasets: [{
+    label: 'My First Dataset',
+    data: [0, 5000, 10000, 15000, 20000],
+    fill: false,
+    borderColor: 'rgb(249, 250, 250)',
+    dataColor:'rgb(249, 250, 250)',
+    tension: 0.1
+  }]
+},
+
+ {name:'Mail-Orders',qty: 20 }, 
+ 
+ {name:'Online', qty:50},
+ 
+  {name:'In-Stores', qty:30}
+
+
+ 
+]
+
 export const usersData = [
   {
     id: 1,
@@ -264,6 +288,12 @@ export const sideBarData = [
     id: 113,
   },
   {
+    icon: FaCircleArrowUp,
+    title: "Promotions",
+    link: "/promotions",
+    id: 78,
+  },
+  {
     icon: FaFileInvoice,
     title: "Invoice",
     link: "/invoice",
@@ -366,12 +396,6 @@ export const sideBarData = [
     id: 76,
   },
   {
-    icon: FaCircleArrowUp,
-    title: "Promotions",
-    link: "/xero",
-    id: 78,
-  },
-  {
     icon: FaRegMoneyBill1,
     title: "Accounting",
     link: "/accounting",
@@ -440,3 +464,20 @@ export const navBarData = [
     id: 4,
   },
 ];
+
+
+export const options = {
+  responsive: true,
+  plugins: {
+    legend: {
+      position: 'bottom-right' ,
+    },
+    title: {
+      display: false,
+      text: 'Chart.js Line Chart',
+    },
+  },
+};
+export const reportLabels = ['Achieve Total Income', 'Total Income By Bank', 'Achieve Total Expense ', 'Total Expense by Bank', 'Invoice Goal', 'Estimate Goal', 'Payment Goal',"Task Done Goal","Resolved Bugs Goal","Convert Leads To client","Client Goal Without converted","Complete Project Goal"];
+export const incomeLabels = ['January', 'February', 'March ', 'April', 'May', 'June', 'July',"August","September","October","November","December"];
+

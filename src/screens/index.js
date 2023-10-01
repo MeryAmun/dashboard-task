@@ -1,2 +1,5 @@
 export { default as Home } from './Home'
 export { default as UsersScreen } from './UsersScreen'
+export { default as Promotions } from './Promotions/Promotions'
+export { default as FileManager } from './FileManager/FileManager'
+export { default as CustomCalendar  } from './calendar/CustomCalendar'

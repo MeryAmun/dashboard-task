@@ -3,9 +3,7 @@ import './App.css';
 import { Routes, Route , } from 'react-router';
 import  Sidebar from "./components/sidebar/Sidebar";
 import Navbar from "./components/navbar/Navbar";
-import { Home, UsersScreen } from './screens/index';
-import { CustomCalender } from './components/calendar/index';
-import FileManager from './components/FileManager/FileManager';
+import { Home, UsersScreen, CustomCalendar,FileManager,Promotions  } from './screens/index';
 import { useLocation } from "react-router-dom";
 import { getCurrentLocation } from './utils/utils';
 
@@ -69,9 +67,10 @@ const handleActive  = () => {
     <div className="subMain">
     <Routes>
       <Route exact path='/' element={<Home/>}/>
-      <Route exact path='/calendar' element={<CustomCalender/>}/>
+      <Route exact path='/calendar' element={<CustomCalendar/>}/>
       <Route exact path='/file-manager' element={<FileManager/>}/>
       <Route exact path='/users' element={<UsersScreen/>}/>
+      <Route exact path='/promotions' element={<Promotions/>}/>
      </Routes>
     </div>
 </div> 

@@ -5,6 +5,10 @@ if(location === "/"){
     return "Dashboard"
 }else if(location === "/users"){
     return "Users"
+}
+else if(location === "/promotions"){
+    return "Promotions"
+    
 }else if(location === "/calendar"){
     return "Calendar"
 }else if(location === "/file-manager"){

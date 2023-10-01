@@ -1,0 +1,222 @@
+.btn__tab{
+    background-color: transparent;
+    color: black;
+    outline: none;
+    border: none;
+    padding: 10px 0;
+}
+
+
+.btn__tabActive{
+    background-color: transparent;
+    color: rgb(59, 130, 246);
+    outline: none;
+    border-bottom: 2px solid rgb(59, 130, 246);
+}
+
+.ban,.delete{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0168FA;
+    padding:3px 5px;
+}
+.mail,.edit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(239, 68, 68);
+    padding:3px 5px;
+}
+
+.printer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F05050;
+    padding: 3px 4px; 
+    cursor: pointer;
+}
+.selected{
+    background-color:#27C24C; 
+    color: #fff;
+    padding: 3px 4px;
+    font-size: 12px;
+    cursor: pointer;
+}
+.xlxl{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+background-color: #7266BA;
+padding: 3px 4px;
+cursor: pointer;
+}
+.csv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #5D9CEC;
+    padding: 3px 4px;
+    cursor: pointer;
+  
+}
+.pdf{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(35, 183, 229);
+    padding: 3px 4px;
+    cursor: pointer;
+  
+}
+
+
+
+
+/* ===================================USER LIST========================================= */
+
+.searchLabel{
+font-family: "Source Sans Pro", sans-serif;
+font-size: 14px;
+font-weight: 400;
+color: rgb(51, 51, 51);
+}
+
+.activeStatus{
+background-color: "rgb(39, 194, 76)";
+ font-size: "10px";
+  color: "white";
+ padding: "5px";
+}
+.form_inputSelect{
+    width: 100%;
+    border: 1px solid #DCE5E7;
+    padding: 5px 0;
+  outline: 2px solid #DCE5E7;
+    border-radius: 2px;
+}
+
+.pagination_note{
+font-size: 14px;
+font-weight: 400;
+line-height: 21.4px;
+color: rgb(51, 51, 51);
+}
+
+.pagination_buttons{
+  border: 1px solid #DCE5E7;
+}
+/* =======================CREATE NEW USER ================================================ */
+.wrapper{
+    background-color: rgb(235, 231, 231);
+}
+.userScreen_header{
+    background-color: #DCE5E7;
+    color: #656565;
+}
+
+.form_input{
+width: 100%;
+border: 2px solid #DCE5E7;
+padding: 5px 0;
+
+    
+  }
+  .input_label{
+    width: 40%;
+    /* padding: 3px 10px; */
+    margin-right: 10px;
+    text-align: end;
+    font-size: 14px;
+    font-weight: 700;
+    color: rgb(101, 101, 101);
+  }
+  .permissionInput_label{
+    width: 40%;
+    /* padding: 3px 10px; */
+    margin-right: 10px;
+    text-align: end;
+    font-size: 14px;
+    font-weight: 700;
+    color: rgb(101, 101, 101);
+  }
+  .photo_label{
+    width: 30%;
+    /* padding: 3px 10px; */
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+    padding-right:10px;
+    color: rgb(101, 101, 101);
+  }
+  .createWarehouse_btn{
+   padding: 6.5px 8px;
+   border: none;
+   outline: none;
+   background-color: #DCE5E7;
+  }
+
+  input[type="radio"] {
+    /* Add if not using autoprefixer */
+    -webkit-appearance: none;
+    appearance: none;
+    /* For iOS < 15 to remove gradient background */
+    background-color: #fff;
+    /* Not removed via appearance */
+    margin: 0;
+  }
+
+  input[type="radio"] {
+    appearance: none;
+    background-color: #fff;
+    margin: 0;
+    font: inherit;
+    color: rgb(59, 130, 246);
+    width: 1.15em;
+    height: 1.15em;
+    border: 0.15em solid rgb(59, 130, 246);
+    border-radius: 50%;
+    transform: translateY(-0.075em);
+  }
+
+  input[type="radio"]::before {
+    content: "";
+    width: 0.55em;
+    height: 0.55em;
+    border-radius: 50%;
+    transform: scale(0);
+    transition: 120ms transform ease-in-out;
+    box-shadow: inset 1em 1em var(--form-control-color);
+  }
+
+  input[type="radio"] {
+    /* ...existing styles */
+    display: grid;
+    place-content: center;
+  }
+  
+  input[type="radio"]::before {
+    content: "";
+    width: 0.55em;
+    height: 0.55em;
+    border-radius: 50%;
+    transform: scale(0);
+    transition: 120ms transform ease-in-out;
+    box-shadow: inset 1em 1em var(--form-control-color);
+  }
+  
+  input[type="radio"]:checked::before {
+    transform: scale(1);
+  }
+
+  input[type="radio"]::before {
+    /* ...existing styles */
+  
+    /* Windows High Contrast Mode */
+    background-color: rgb(59, 130, 246);
+  }
+
+  ::placeholder{
+   padding-left: 10px;
+  }

@@ -1,8 +1,8 @@
 .sidebar__wrapper {
-    height: 100vh;
+    height: 100%;
     width: 190px;
     align-items: center;
-    background-color: rgb(17, 24, 39);
+    background-color: #000;
 }
 
 
@@ -10,16 +10,15 @@
     /* position: fixed;
     top: 0;
     left: 0; */
-    margin-top: -155px;
     display: flex;
     width: 190px;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
     height: 100vh;
-    overflow-y: scroll;
+  
     align-items: center;
-    background-color: rgb(17, 24, 39);
+    background-color: #000;
 
 }
 
@@ -33,7 +32,7 @@
     align-items: center;
     overflow: hidden;
     padding: 10px 5px;
-    background-color: rgb(17, 24, 39);
+    background-color: #000;
 
 }
 
@@ -86,7 +85,7 @@
 }
 
 .sidebar__links {
-    background-color: rgb(17, 24, 39);
+    background-color: #000;
     /* background-color: rgb(31, 41, 55); */
     width: 190px;
     height: 100%;

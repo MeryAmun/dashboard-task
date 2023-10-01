@@ -245,7 +245,7 @@ const toggleActiveStatus = (id) => {
           />
         </div>
       </div>
-     <div className="tableContainer" ref={tableRef}>
+     <div className="tableContainer w-100" ref={tableRef}>
      <CompactTable columns={COLUMNS} data={data} theme={theme} />
      </div>
 
