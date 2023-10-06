@@ -4,27 +4,25 @@ import UsersList from '../components/usersList/UsersList';
 import CreateUser from '../components/usersList/CreateUser';
 
 const UsersScreen = () => {
-    const [active, setActive] = useState("All Users");
+    const [active, setActive] = useState("All");
     const handleTabs = () => {
-     if( active === "All Users" ){
-setActive("New User")
+     if( active === "All" ){
+setActive("New")
      }else{
-        setActive("All Users")
+        setActive("All")
      }
     }
   return (
-    <div className='w-100 userScreen wrapper'>
-        <div className="w-100 d-flex justify-content-start align-items-center ps-4 userScreen_header">
-        <button className={active === "All Users"? "btn__tab btn__tabActive me-2" : "btn__tab me-2"} onClick={handleTabs}>All Users</button>
-        <button className={active === "New User"? "btn__tab btn__tabActive ms-2" : "btn__tab ms-2"} onClick={handleTabs}>New User</button>
-        </div>
-        <div className="w-100 d-flex justify-content-center align-items-center p-4">
+    <div>
+    <div className="w-100 d-flex justify-content-start align-items-center promotionScreen_header">
+      <button className={active === "All"? "promotionActive" : "promotion"} onClick={() => setActive("All")}>All Users</button>
+      <button className={active === "New"? "promotionActive" : "promotion"} onClick={() => setActive("New")}>New User</button>
+      </div>
             {
-                active === "All Users" ? (
+                active === "All" ? (
                     <UsersList/>
                 ) : (<CreateUser/>)
             }
-        </div>
     </div>
   )
 }

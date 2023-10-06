@@ -51,11 +51,21 @@ code {
   color:#656565;
 }
 .panel-heading {
-  border-bottom: 2px solid #1797BC;
+  border-bottom: 2px solid #000;
   background-color: #fff;
 }
 
-
+.navbarFooter__title{
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 26.4px;
+   color: rgb(116, 134, 144);
+  }
+  .navbar_clock{
+  font-size: 13px;
+  font-weight: 400;
+  color: rgb(146, 146, 146)
+  }
 
 .dashboard__graphs {
       position: relative;

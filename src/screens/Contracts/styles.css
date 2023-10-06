@@ -1,0 +1,65 @@
+.promotionScreen_header{
+  background-color: #fff;
+}
+
+.new__task{
+width: 100%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+background-color: #D1D5DB;
+padding: 20px 40px;
+}
+.editor{
+background-color: #fff;
+}
+.promotionActive{
+  background-color: #D1D5DB;
+  outline: none;
+  border: none;
+  padding: 10px 30px;
+}
+.promotion{
+  background-color: transparent;
+  outline: none;
+  border: none;
+  padding: 10px 30px;
+}
+
+
+.wrapper{
+  background-color: rgb(235, 231, 231);
+}
+.userScreen_header{
+  background-color: #DCE5E7;
+  color: #656565;
+}
+
+.form_input{
+width: 100%;
+border: 2px solid #DCE5E7;
+padding: 8px 5px;
+background-color: #fff;
+border-radius: 5px;
+
+  
+}
+.input_label{
+  width: 40%;
+  margin-right: 10px;
+  text-align: start;
+  font-size: 13px;
+  font-weight: 700;
+  color: black;
+  align-self: flex-start;
+
+}
+
+
+
+
+
+::placeholder{
+ padding-left: 10px;
+}

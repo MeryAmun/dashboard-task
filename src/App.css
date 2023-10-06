@@ -33,7 +33,7 @@
       display: flex;
       flex-direction: row;
       justify-content: flex-start;
-      align-items: center;
+      align-items: flex-start;
      /* flex: 0.8; */
      width:100%;
      
@@ -55,6 +55,8 @@ z-index: 1011;
     margin: 0; */
     justify-self: center;
     flex: 1;
+      height: 100vh;
+      overflow-y: scroll;
   }
 
 .overViewCard{width:"280px"; height:"150px";background-color:"white"; border-radius:"10px";}

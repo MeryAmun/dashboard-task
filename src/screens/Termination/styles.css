@@ -1,0 +1,28 @@
+.tableScreen_header{
+    border:2px solid #DCE5E7;
+    color: #656565;
+}
+
+.tableBtn__tab{
+    background-color: transparent;
+    color: #656565;
+    font-size: 13px;
+    outline: none;
+    border: none;
+    padding: 10px 0;
+}
+
+.cell__item{
+    color: #656565;
+    font-size: 13px;
+  }
+.tableContainer{
+    width: 80%;
+  padding: 0;
+}
+.tableBtn__tabActive{
+    background-color: transparent;
+    color: rgb(59, 130, 246);
+    outline: none;
+    border-bottom: 2px solid rgb(59, 130, 246);
+}

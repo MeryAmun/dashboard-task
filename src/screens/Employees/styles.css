@@ -1,0 +1,42 @@
+.tableScreen_header{
+    border:2px solid #DCE5E7;
+    color: #656565;
+}
+
+.cell__item{
+    color: #656565;
+    font-size: 13px;
+  }
+.tableContainer{
+    width: 100%;
+  padding: 0;
+}
+
+.promotionScreen_header{
+  background-color: #fff;
+}
+
+.new__promotion{
+width: 100%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+background-color: #D1D5DB;
+padding: 20px 40px;
+}
+.editor{
+background-color: #fff;
+}
+.promotionActive{
+  background-color: #D1D5DB;
+  outline: none;
+  border: none;
+  padding: 10px 30px;
+}
+.promotion{
+  background-color: transparent;
+  outline: none;
+  border: none;
+  padding: 10px 30px;
+}

@@ -27,13 +27,13 @@ else if(location === "/promotions"){
     return "Activities"
 }else if(location === "/opportunity"){
     return "Opportunity"
-}else if(location === "/terminate"){
-    return "Terminate"
+}else if(location === "/termination"){
+    return "Termination"
 }else if(location === "/mail"){
     return "Mailbox"
 }else if(location === "/clients"){
     return "Clients"
-}else if(location === "/deal"){
+}else if(location === "/deals"){
     return "Deals"
 }else if(location === "/goals"){
     return "Goals"
@@ -59,5 +59,7 @@ else if(location === "/promotions"){
     return "Tickets"
 }else if(location === "/knowledge"){
     return "Knowledge"
+}else if(location === "/transactions"){
+    return "Transactions"
 }
 }

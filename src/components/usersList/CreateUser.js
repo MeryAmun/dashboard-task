@@ -37,39 +37,39 @@ const createWarehouse = () =>{
   alert("create new warehouse")
 }
   return (
-    <div className='w-100 bg-light py-4 d-flex flex-column justify-content-center align-items-center' >
+    <div className='create__user' >
       <div className="d-flex  my-1 justify-content-between align-items-center  w-50" >
-        <label htmlFor="" className='input_label'>Full Name<sup style={{color:"red"}}>*</sup></label>
+        <label className='input_label'>Full Name<sup style={{color:"red"}}>*</sup></label>
        <input type="text" placeholder='e.g Enter Your Full Name' name="fullName" value={formData.fullName} className='form_input'
        onChange={handleChange} required/>
       </div>
       <div className="d-flex  my-1 justify-content-between align-items-center  w-50">
-        <label htmlFor="" className='input_label'>Employment ID</label>
+        <label className='input_label'>Employment ID</label>
        <input type="text" placeholder='e.g 15425' name="employmentId" value={formData.employmentId} className='form_input'
        onChange={handleChange} required/>
       </div>
       <div className="d-flex  my-1 justify-content-between align-items-center  w-50">
-        <label htmlFor="" className='input_label'>Username<sup style={{color:"red"}}>*</sup></label>
+        <label className='input_label'>Username<sup style={{color:"red"}}>*</sup></label>
        <input type="text" placeholder='e.g Enter Your Username' name="username" value={formData.username} className='form_input'
        onChange={handleChange} required/>
       </div>
       <div className="d-flex  my-1 justify-content-between align-items-center  w-50">
-        <label htmlFor="" className='input_label'>Password<sup style={{color:"red"}}>*</sup></label>
+        <label className='input_label'>Password<sup style={{color:"red"}}>*</sup></label>
        <input type="text" placeholder='e.g Enter Your Password' name="password" value={formData.password} className='form_input'
        onChange={handleChange} required/>
       </div>
       <div className="d-flex  my-1 justify-content-between align-items-center  w-50">
-        <label htmlFor="" className='input_label'>Confirm Password<sup style={{color:"red"}}>*</sup></label>
+        <label className='input_label'>Confirm Password<sup style={{color:"red"}}>*</sup></label>
        <input type="text" placeholder='e.g Confirm Password' name="confirmPassword" value={formData.confirmPassword} className='form_input'
        onChange={handleChange} required/>
       </div>
       <div className="d-flex  my-1 justify-content-between align-items-center  w-50">
-        <label htmlFor="" className='input_label'>Email<sup style={{color:"red"}}>*</sup></label>
+        <label className='input_label'>Email<sup style={{color:"red"}}>*</sup></label>
        <input type="text" placeholder='e.g Enter Your Email' name="email" value={formData.email} className='form_input'
        onChange={handleChange} required/>
       </div>
       <div className="d-flex  my-1 justify-content-between align-items-center  w-50">
-        <label htmlFor="" className='input_label'>Locale</label>
+        <label className='input_label'>Locale</label>
         <select name="" id="" className='form_input'
         onChange={handleChange} required>
           <option value="cameroon">Cameroon</option>
@@ -78,27 +78,27 @@ const createWarehouse = () =>{
         </select>
       </div>
       <div className="d-flex  my-1 justify-content-between align-items-center  w-50">
-        <label htmlFor="" className='input_label'>Language</label>
+        <label className='input_label'>Language</label>
        <input type="text" placeholder='e.g Enter Your Language' name="language" value={formData.language} className='form_input'
        onChange={handleChange} required/>
       </div>
       <div className="d-flex  my-1 justify-content-between align-items-center  w-50">
-        <label htmlFor="" className='input_label'>phone</label>
+        <label className='input_label'>phone</label>
        <input type="text" placeholder='e.g Enter Your Phone Number' name="phone" value={formData.phone} className='form_input'
        onChange={handleChange} required/>
       </div>
       <div className="d-flex  my-1 justify-content-between align-items-center  w-50">
-        <label htmlFor="" className='input_label'>mobile</label>
+        <label className='input_label'>mobile</label>
        <input type="text" placeholder='e.g Enter Your mobile' name="mobile" value={formData.mobile} className='form_input'
        onChange={handleChange} required/>
       </div>
       <div className="d-flex  my-1 justify-content-between align-items-center  w-50">
-        <label htmlFor="" className='input_label'>Skype Id</label>
+        <label className='input_label'>Skype Id</label>
        <input type="text" placeholder='e.g Enter Your Skype Id' name="skypeId" value={formData.skypeId} className='form_input'
        onChange={handleChange} required/>
       </div>
       <div className="d-flex  my-1 justify-content-start align-items-center  w-50">
-        <label htmlFor="" className='photo_label'>Profile Photo<sup style={{color:"red"}}>*</sup></label>
+        <label className='photo_label'>Profile Photo<sup style={{color:"red"}}>*</sup></label>
         <div className="d-flex flex-column justify-content-start align-items-center w-50">
           <img src={profileAvatar} alt="user"  height="200px" width="200px" className='' style={{border:"2px solid  #DCE5E7", alignSelf:"flex-start"}}/>
         <input type="file" name="profilePhoto" value={formData.profilePhoto} className='form_input mt-2'
@@ -106,7 +106,7 @@ const createWarehouse = () =>{
         </div>
       </div>
       <div className="d-flex  my-1 justify-content-between align-items-center  w-50">
-        <label htmlFor="" className='input_label'>Select Warehouse<sup style={{color:"red"}}>*</sup></label>
+        <label className='input_label'>Select Warehouse<sup style={{color:"red"}}>*</sup></label>
        <div className="d-flex  my-1 justify-content-between align-items-center  w-100">
        <select name="Select Warehouse" value={formData.selectWarehouse} className='form_input'
        onChange={handleChange} required>
@@ -120,7 +120,7 @@ const createWarehouse = () =>{
        </div>
       </div>
       <div className="d-flex  my-1 justify-content-between align-items-center  w-50">
-        <label htmlFor="" className='input_label'>User Type<sup style={{color:"red"}}>*</sup></label>
+        <label className='input_label'>User Type<sup style={{color:"red"}}>*</sup></label>
        <select name="userType" value={formData.userType} className='form_input'
         onChange={handleChange} required>
           <option value="">Select User Type</option>
@@ -130,7 +130,7 @@ const createWarehouse = () =>{
         </select>
       </div>
       <div className="d-flex  my-1 justify-content-between align-items-center  w-50">
-        <label htmlFor="" className='input_label'>Direction</label>
+        <label className='input_label'>Direction</label>
        <select name="direction" value={formData.direction} className='form_input'
         onChange={handleChange} required>
           <option value="">Select Direction</option>

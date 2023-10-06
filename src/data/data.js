@@ -29,6 +29,7 @@ import {
   FaMoneyBillTrendUp,
   FaMoneyCheck,
   FaMoneyBillWheat,
+  FaPeopleGroup
 } from "react-icons/fa6";
 import {
   FaFileInvoice,
@@ -36,42 +37,50 @@ import {
 
   //FaFileInvoiceDollar
 } from "react-icons/fa";
-import { GiTeamDowngrade, GiSlingshot } from "react-icons/gi";
+import {  GiSlingshot } from "react-icons/gi";
 import { FiActivity } from "react-icons/fi";
-import { FaBars } from "react-icons/fa";
+import { FaBars,FaPeopleCarry } from "react-icons/fa";
 import { GoGoal, GoStack } from "react-icons/go";
 import { BsExclamationCircle } from "react-icons/bs";
 import { HiMiniUsers } from "react-icons/hi2";
 import { HiOutlineQuestionMarkCircle } from "react-icons/hi";
 import { CgArrowLongRight } from "react-icons/cg";
-import { MdOutlineIndeterminateCheckBox } from "react-icons/md";
+import { MdOutlineIndeterminateCheckBox ,MdWork} from "react-icons/md";
 import { RiArrowDropDownLine, RiArrowDropUpLine } from "react-icons/ri";
 import { FcDepartment, FcLeave } from "react-icons/fc";
 import { PiUsersFourFill } from "react-icons/pi";
 
 
-export const lineData = [ 
+export const lineData = [
   {
- labels: ['2011 Q1', '2011 Q2', '2011 Q3', '2011 Q4','2012 Q1', '2012 Q2', '2012 Q3', '2012 Q4'],
-  datasets: [{
-    label: 'My First Dataset',
-    data: [0, 5000, 10000, 15000, 20000],
-    fill: false,
-    borderColor: 'rgb(249, 250, 250)',
-    dataColor:'rgb(249, 250, 250)',
-    tension: 0.1
-  }]
-},
+    labels: [
+      "2011 Q1",
+      "2011 Q2",
+      "2011 Q3",
+      "2011 Q4",
+      "2012 Q1",
+      "2012 Q2",
+      "2012 Q3",
+      "2012 Q4",
+    ],
+    datasets: [
+      {
+        label: "My First Dataset",
+        data: [0, 5000, 10000, 15000, 20000],
+        fill: false,
+        borderColor: "rgb(249, 250, 250)",
+        dataColor: "rgb(249, 250, 250)",
+        tension: 0.1,
+      },
+    ],
+  },
 
- {name:'Mail-Orders',qty: 20 }, 
- 
- {name:'Online', qty:50},
- 
-  {name:'In-Stores', qty:30}
+  { name: "Mail-Orders", qty: 20 },
 
+  { name: "Online", qty: 50 },
 
- 
-]
+  { name: "In-Stores", qty: 30 },
+];
 
 export const usersData = [
   {
@@ -186,6 +195,101 @@ export const clients = [
     color: "rgb(234, 179, 8)",
   },
 ];
+export const employees = [
+  {
+    id: 1,
+    city:"Lake Macville",
+    name: "Ms. Sister Morar",
+    image: "https://avatars.dicebear.com/api/avataaars/Ms-Sister%20Morar.svg",
+    progress: "34",
+    company: "Gusikowski, Altenwerth and Abbott",
+    joinedOn: "J1un 11, 2022",
+  },
+  {
+    id: 2,
+    city:"West Alexiemouth",
+    name: "Ms. Laisha Reinger",
+    image: "https://avatars.dicebear.com/api/avataaars/Ms-Laisha%20Reinger.svg",
+    progress: "72",
+    company: "Boehm PLC",
+    joinedOn: "Nov 2, 2022",
+  },
+  {
+    id: 3,
+    city:"Naderview",
+    name: "Cameron Lind",
+    image: "https://avatars.dicebear.com/api/avataaars/Cameron-Lind.svg",
+    progress: "89",
+    company: "Tremblay, Padberg and Pouros",
+    joinedOn: "Sep 14, 2022 ",
+  },
+  {
+    id: 4,
+    city:"Jeanieborough",
+    name: "Sarai Little",
+    image: "https://avatars.dicebear.com/api/avataaars/Sarai-Little.svg",
+    progress: "49",
+    company: "Deckow LLC",
+    joinedOn: "Jun 13, 2022",
+  },
+  {
+    id: 5,
+    city:"JeNew Alvera",
+    name: "Sarai Little",
+    image: "https://avatars.dicebear.com/api/avataaars/Sarai-Little.svg",
+    progress: "29",
+    company: "Osinski, Boehm and Kihn",
+    joinedOn: "Jun 13, 2022",
+  },
+  {
+    id: 11,
+    city:"Lake Macville",
+    name: "Ms. Sister Morar",
+    image: "https://avatars.dicebear.com/api/avataaars/Ms-Sister%20Morar.svg",
+    progress: "34",
+    company: "Gusikowski, Altenwerth and Abbott",
+    joinedOn: "Jun 11, 2022",
+  },
+  {
+    id: 21,
+    city:"West Alexiemouth",
+    name: "Ms. Laisha Reinger",
+    image: "https://avatars.dicebear.com/api/avataaars/Ms-Laisha%20Reinger.svg",
+    progress: "72",
+    company: "Boehm PLC",
+    joinedOn: "Nov 2, 2022",
+  },
+  {
+    id: 31,
+    city:"Naderview",
+    name: "Cameron Lind",
+    image: "https://avatars.dicebear.com/api/avataaars/Cameron-Lind.svg",
+    progress: "59",
+    company: "Tremblay, Padberg and Pouros",
+    joinedOn: "Sep 14, 2022 ",
+  },
+  {
+    id: 41,
+    city:"Jeanieborough",
+    name: "Sarai Little",
+    image: "https://avatars.dicebear.com/api/avataaars/Sarai-Little.svg",
+    progress: "43",
+    company: "Deckow LLC",
+    joinedOn: "Jun 13, 2022",
+  },
+  {
+    id: 51,
+    city:"JeNew Alvera",
+    name: "Sarai Little",
+    image: "https://avatars.dicebear.com/api/avataaars/Sarai-Little.svg",
+    progress: "69",
+    company: "Osinski, Boehm and Kihn",
+    joinedOn: "Jun 13, 2022",
+  },
+];
+
+
+
 
 export const transactions = [
   {
@@ -276,10 +380,22 @@ export const sideBarData = [
     id: 2,
   },
   {
+    icon: FaPeopleGroup,
+    title: "Employees",
+    link: "/employees",
+    id: 3132,
+  },
+  {
     icon: AiTwotoneFile,
     title: "File Manager",
     link: "/file-manager",
     id: 5,
+  },
+  {
+    icon: FaFileContract,
+    title: "Contracts",
+    link: "/contracts",
+    id: 71,
   },
   {
     icon: FaUsers,
@@ -292,6 +408,54 @@ export const sideBarData = [
     title: "Promotions",
     link: "/promotions",
     id: 78,
+  },
+  {
+    icon: MdWork,
+    title: "Transactions",
+    link: "/transactions",
+    id: 25521,
+  },
+  {
+    icon: FaBars,
+    title: "Projects",
+    link: "/projects",
+    id: 4,
+  },
+  {
+    icon: FaIdeal,
+    title: "Deals",
+    link: "/deals",
+    id: 444,
+  },
+  {
+    icon: GoGoal,
+    title: "Goals",
+    link: "/goals",
+    id: 445,
+  },
+  {
+    icon: PiUsersFourFill,
+    title: "Clients",
+    link: "/clients",
+    id: 336,
+  },
+  {
+    icon: FaTasks,
+    title: "Tasks",
+    link: "/tasks",
+    id: 333,
+  },
+  {
+    icon: MdOutlineIndeterminateCheckBox,
+    title: "Termination",
+    link: "/termination",
+    id: 336,
+  },
+  {
+    icon: IoCutOutline,
+    title: "Resignation",
+    link: "/resignation",
+    id: 91,
   },
   {
     icon: FaFileInvoice,
@@ -311,18 +475,7 @@ export const sideBarData = [
     link: "/leave",
     id: 331,
   },
-  {
-    icon: GiTeamDowngrade,
-    title: "Employees",
-    link: "/employees",
-    id: 332,
-  },
-  {
-    icon: FaTasks,
-    title: "Tasks",
-    link: "/tasks",
-    id: 333,
-  },
+
   {
     icon: FiActivity,
     title: "Activities",
@@ -335,53 +488,21 @@ export const sideBarData = [
     link: "/opportunity",
     id: 335,
   },
-  {
-    icon: MdOutlineIndeterminateCheckBox,
-    title: "Terminate",
-    link: "/terminate",
-    id: 336,
-  },
+
   {
     icon: AiOutlineMail,
     title: "Mailbox",
     link: "/mail",
     id: 32,
   },
-  {
-    icon: PiUsersFourFill,
-    title: "Clients",
-    link: "/clients",
-    id: 336,
-  },
-  {
-    icon: FaIdeal,
-    title: "Deals",
-    link: "/deals",
-    id: 444,
-  },
-  {
-    icon: GoGoal,
-    title: "Goals",
-    link: "/goals",
-    id: 445,
-  },
-  {
-    icon: FaBars,
-    title: "Projects",
-    link: "/projects",
-    id: 4,
-  },
+ 
+,
+
   {
     icon: FaArrowsRotate,
     title: "Xero",
     link: "/xero",
     id: 7,
-  },
-  {
-    icon: FaFileContract,
-    title: "Contracts",
-    link: "/contracts",
-    id: 71,
   },
   {
     icon: AiFillWarning,
@@ -407,12 +528,7 @@ export const sideBarData = [
     link: "/leads",
     id: 9,
   },
-  {
-    icon: IoCutOutline,
-    title: "Resignation",
-    link: "/resignation",
-    id: 91,
-  },
+
   {
     icon: GoStack,
     title: "Stock",
@@ -423,7 +539,7 @@ export const sideBarData = [
     icon: FaCartPlus,
     title: "Sales",
     link: "/sales",
-    id: 912,
+    id: 9121,
   },
   {
     icon: IoTicketSharp,
@@ -435,7 +551,7 @@ export const sideBarData = [
     icon: HiOutlineQuestionMarkCircle,
     title: "Knowledge",
     link: "/knowledge",
-    id: 912,
+    id: 9112,
   },
 ];
 export const navBarData = [
@@ -465,19 +581,43 @@ export const navBarData = [
   },
 ];
 
-
 export const options = {
   responsive: true,
   plugins: {
     legend: {
-      position: 'bottom-right' ,
+      position: "bottom-right",
     },
     title: {
       display: false,
-      text: 'Chart.js Line Chart',
+      text: "Chart.js Line Chart",
     },
   },
 };
-export const reportLabels = ['Achieve Total Income', 'Total Income By Bank', 'Achieve Total Expense ', 'Total Expense by Bank', 'Invoice Goal', 'Estimate Goal', 'Payment Goal',"Task Done Goal","Resolved Bugs Goal","Convert Leads To client","Client Goal Without converted","Complete Project Goal"];
-export const incomeLabels = ['January', 'February', 'March ', 'April', 'May', 'June', 'July',"August","September","October","November","December"];
-
+export const reportLabels = [
+  "Achieve Total Income",
+  "Total Income By Bank",
+  "Achieve Total Expense ",
+  "Total Expense by Bank",
+  "Invoice Goal",
+  "Estimate Goal",
+  "Payment Goal",
+  "Task Done Goal",
+  "Resolved Bugs Goal",
+  "Convert Leads To client",
+  "Client Goal Without converted",
+  "Complete Project Goal",
+];
+export const incomeLabels = [
+  "January",
+  "February",
+  "March ",
+  "April",
+  "May",
+  "June",
+  "July",
+  "August",
+  "September",
+  "October",
+  "November",
+  "December",
+];

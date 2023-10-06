@@ -96,6 +96,8 @@ import { v4 as uuid } from "uuid";
         </button>
       </Modal>
       <FullCalendar
+      height="50%"
+      aspectRatio="1"
         editable
         selectable
         events={events}

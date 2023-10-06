@@ -12,9 +12,7 @@ import { FiBell } from "react-icons/fi";
 import { BsPlusCircleFill } from "react-icons/bs";
 import { FaFlag } from "react-icons/fa6";
 import { IoSearch } from "react-icons/io5";
-import moment from "moment";
 
-const date = new Date();
 const Navbar = ({ handleActive, current }) => {
   const [toggleArrow, setToggleArrow] = useState(false);
 
@@ -187,33 +185,6 @@ const Navbar = ({ handleActive, current }) => {
           </div>
         </div>
       </nav>
-      <div className="w-100 d-flex justify-content-between align-items-center bg-light p-0">
-      <div
-          className=""
-          style={{
-            width: "189px",
-            height: "69px",
-            backgroundColor: "#000",
-            margin: "0",
-          }}
-        >
-          {/* <img src={navbarLogo} alt="" width="100%" height="100%" /> */}
-        </div>
-        <span className="navbarFooter__title">
-          {current}
-        </span>
-        <div
-          className="d-flex justify-content-center align-items-center pt-3"
-          style={{ marginRight: "100px" }}
-        >
-          <p className="navbar_clock mx-2">
-            {moment(date).format("MMMM Do YYYY")}
-          </p>
-          <p className="navbar_clock">
-            Time: {moment(date).format("h:mm:ss a")}
-          </p>
-        </div>
-      </div>
     </div>
   );
 };
