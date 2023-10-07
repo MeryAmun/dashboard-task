@@ -1,49 +1,58 @@
 import React from "react";
+import "./styles.css";
 
-const TablePagination = ({currentPage,nPages,setCurrentPage}) => {
-    const pageNumbers = [...Array(nPages + 1).keys()].slice(1);
+const TablePagination = ({ currentPage, nPages, setCurrentPage }) => {
+  const pageNumbers = [...Array(nPages + 1).keys()].slice(1);
 
+  const goToNextPage = () => {
+    if (currentPage !== nPages) setCurrentPage(currentPage + 1);
+  };
 
-    const goToNextPage = () => {
-        if (currentPage !== nPages) setCurrentPage(currentPage + 1);
-      };
-    
-      const goToPrevPage = () => {
-        if (currentPage !== 1) setCurrentPage(currentPage - 1);
-      };
-
-console.log(pageNumbers)
-console.log(nPages)
+  const goToPrevPage = () => {
+    if (currentPage !== 1) setCurrentPage(currentPage - 1);
+  };
 
   return (
-    <nav>
-      <ul className="pagination justify-content-center">
-        <li className="page-item">
-          <a className="page-link" onClick={goToPrevPage} href="#">
-            Previous
-          </a>
-        </li>
-        {pageNumbers.map((pgNumber) => (
-          <li
-            key={pgNumber}
-            className={`page-item ${currentPage == pgNumber ? "active" : ""} `}
-          >
-            <a
-              onClick={() => setCurrentPage(pgNumber)}
-              className="page-link"
-              href="#"
-            >
-              {pgNumber}
-            </a>
-          </li>
-        ))}
-        <li className="page-item">
-          <a className="page-link" onClick={goToNextPage} href="#">
-            Next
-          </a>
-        </li>
-      </ul>
-    </nav>
+    <div className="pagination_buttons">
+      <button
+        className="bg-light"
+        disabled={currentPage === 1 ? true : false}
+        style={{
+          backgroundColor: "5D9CEC",
+          padding: "3px 10px",
+          border: "none",
+        }}
+        onClick={goToPrevPage}
+      >
+        Previous
+      </button>
+      {pageNumbers.map((pgNumber) => (
+        <button
+          className={`page-item ${currentPage === pgNumber ? "active" : ""} `}
+          key={pgNumber}
+          style={{
+            backgroundColor: "rgb(35, 183, 229)",
+            padding: "3px 10px",
+            border: "none",
+          }}
+          onClick={() => setCurrentPage(pgNumber)}
+        >
+          {pgNumber}
+        </button>
+      ))}
+      <button
+        className="bg-light"
+        disabled={currentPage === nPages ? true : false}
+        style={{
+          backgroundColor: "5D9CEC",
+          padding: "3px 10px",
+          border: "none",
+        }}
+        onClick={goToNextPage}
+      >
+        Next
+      </button>
+    </div>
   );
 };
 

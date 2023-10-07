@@ -38,19 +38,16 @@ function App() {
   }, [location.pathname]);
 
   const changeWidth = () => {
-    mainApp.current.style.width = "20%";
+    mainApp.current.style.width = "240px";
     mainApp.current.style.transition = "width ease 0.31s";
-    sidebarWidth.current.style.left = "0%";
-    sidebarWidth.current.style.width = "80%";
-    sidebarWidth.current.style.transition = "left ease 0.31s";
-    console.log(setActive);
+    mainApp.current.style.left = "0%";
+    mainApp.current.style.transition = "left ease 0.31s";
   };
   const prevWidth = () => {
-    mainApp.current.style.width = "80%";
+    mainApp.current.style.width = "0";
     mainApp.current.style.transition = "width ease 0.31s";
-    sidebarWidth.current.style.left = "-20%";
-    sidebarWidth.current.style.width = "20%";
-    sidebarWidth.current.style.transition = "left ease 0.31s";
+    mainApp.current.style.left = "-50%";
+    mainApp.current.style.transition = "left ease 0.31s";
   };
 
   // const handleActive = () => {
@@ -73,14 +70,9 @@ function App() {
   return (
     <div className="app">
       <Navbar handleActive={handleActive} />
-      <div className="app__main" ref={mainApp}>
-        <div className="sidebarContainer" ref={sidebarWidth}>
-          <Sidebar
-            change={changeWidth}
-            previous={prevWidth}
-            active={active}
-            ref={sidebarWidth}
-          />
+      <div className="app__main">
+        <div className="sidebarContainer" ref={mainApp}>
+          <Sidebar handleActive={handleActive}/>
         </div>
 
         <div className="subMain">

@@ -11,7 +11,7 @@ import {
   } from 'chart.js';
   import DateComponent from '../date/Date'
   import { IoMdSearch } from 'react-icons/io'
-  import {faker} from '@faker-js/faker';
+  //import {faker} from '@faker-js/faker';
 
   ChartJS.register(
     CategoryScale,
@@ -24,16 +24,16 @@ import {
   );
 
 const IncomeExpense = ({ title,options,labels}) => {
-    const data = {
-        labels,
-        datasets: [
-          {
-            data: labels.map(() => faker.datatype.number({ min: 0, max: 1 })),
-            borderColor: 'rgb(255, 99, 132)',
-            backgroundColor: 'rgba(255, 99, 132, 0.5)',
-          },
-        ],
-      };
+    // const data = {
+    //     labels,
+    //     datasets: [
+    //       {
+    //         data: labels.map(() => faker.datatype.number({ min: 0, max: 1 })),
+    //         borderColor: 'rgb(255, 99, 132)',
+    //         backgroundColor: 'rgba(255, 99, 132, 0.5)',
+    //       },
+    //     ],
+    //   };
     return (
         <div className="reportCard__container w-100 d-flex flex-column justify-content-between align-items-center py-3">
   <div className='panel-heading d-flex justify-content-start align-items-center w-100 text-left'>

@@ -43,8 +43,9 @@
 width: 190px;
 height: 100vh;
 overflow-y: scroll;
-border: 2px solid #000;
 background-color: #000;
+
+
 margin-left: -1px;
 z-index: 1011;
  }
@@ -61,6 +62,17 @@ z-index: 1011;
 
 .overViewCard{width:"280px"; height:"150px";background-color:"white"; border-radius:"10px";}
 @media screen and (max-width: 576px) {
+  .app{
+    margin: 0;
+    padding: 0;
+  }
+
+  .home{
+    padding: 0 30px;
+  }
+  .app__main{
+    flex:1;
+  }
   .navbar__menuIcon{
     display: block;
   align-self: flex-start;
@@ -69,13 +81,30 @@ z-index: 1011;
 .overViewCard,
 .clientCard,
 .transactionCard{
-  width: 80%;
+  width: 100%;
 }
-.sidebar__wrapper{
+/* .sidebar__wrapper{
   width: 0px;
   position: absolute;
     left: -230px;
+    background-color:#000;
+} */
+.sidebarContainer{
+  z-index: 1036;
+  transition: width ease 0.31s;
+  width: 0px;
+  position: absolute;
+    left: -50%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    transition: width 0.5s ease-in-out;
+    transition: left 0.5s ease-in-out;
 }
+/* .sidebar{
+  border: 2px solid yellowgreen;
+} */
+
+
 .clients{
   flex-direction: column;
 }
@@ -83,16 +112,14 @@ z-index: 1011;
 /* display: none;
   left: -10px;
   z-index: 1036; */
-  display: none;
+  /* display: none;
   width: 20%;
   position: absolute;
-    left: -20%;
-    margin-top: 90px;
+  left: -20%;
+    margin-top: 90px; */
 
 }
-.app{
-  padding: 10px 5px;
-}
+
 }
 
 

@@ -1,21 +1,11 @@
-import React, { useState } from "react";
-import { CompactTable } from "@table-library/react-table-library/compact";
-import { useTheme } from "@table-library/react-table-library/theme";
-import { getTheme } from "@table-library/react-table-library/baseline";
+import React from "react";
+
 //import "./styles.css";
-import { Link } from 'react-router-dom'
 
 
 
 const ActivityAndAnnouncementCard = ({title}) => {
-  const COLUMNS = [
-    {
-      label: "What To Do",
-      renderCell: (item) => "",
-    },
-    { label: "Status", renderCell: (item) => "" },
-    { label: "Username", renderCell: (item) => item.username },
-  ];
+
   return (
     <div className="RecentActivities__container ">
       <div className="todo__listHeader todo-preview  panel pane-custom menu">

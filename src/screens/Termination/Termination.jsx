@@ -10,7 +10,7 @@ import NewTermination from './NewTermination';
 const TerminationScreen = () => {
   const [active, setActive] = useState("All");
   const data = [];
-
+console.log(setActive())
   return (
     <>
       {

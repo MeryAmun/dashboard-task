@@ -13,76 +13,45 @@ import { BsPlusCircleFill } from "react-icons/bs";
 import { FaFlag } from "react-icons/fa6";
 import { IoSearch } from "react-icons/io5";
 
-const Navbar = ({ handleActive, current }) => {
-  const [toggleArrow, setToggleArrow] = useState(false);
+const Navbar = ({ handleActive }) => {
+  const [active, setActive] = useState(false);
 
   return (
-    <div className="navbar_container w-100">
-      <nav
-        className="navbar navbar-expand-lg d-flex justify-content-start align-items-center w-100 p-0"
-        
-      >
-        <div
-          className=""
-          style={{
-            width: "190px",
-            height: "69px",
-            backgroundColor: "#000",
-            margin: "0",
-          }}
-        >
-          {/* <img src={navbarLogo} alt="" width="100%" height="100%" /> */}
+    <div className="navbar_container">
+      <nav className="navbar navbar-expand-lg d-flex justify-content-start align-items-center w-100 p-0">
+        <div className="navbar__logo_space">
         </div>
         <div
-          className="d-flex justify-content-between align-items-center "
-          style={{
-            width: "85%",
-          }}
+          className="navbar__main"
         >
-          <div className="d-flex justify-content-between align-items-center">
+          <div className="d-flex justify-content-between align-items-center w-100">
             <Menu
-              size={20}
+              size={50}
               color="#fff"
               className="navbar__menuIcon"
               onClick={handleActive}
             />
-            <span
-              className="text-light fw-bold mx-3"
-              style={{ fontSize: "13px" }}
-            >
-              Company Name
-            </span>
+            <div className="sidebar__searchBar d-flex justify-content-start align-items-center w-100">
+              <IoSearch size={17} color="gray" className="me-1" />
+              <input
+                type="text"
+                placeholder="Search in menu..."
+                className="searchbar__input w-100 py-2"
+              />
+            </div>
           </div>
           <div
-            className="me-2 d-flex flex-row-reverse justify-content-center align-items-center"
-            style={{
-              justifySelf: "flex-end",
-
-              // border: "2px solid yellowgreen"
-            }}
-          >
+            className="navbar__endSection">
             <div className="navbar-collapse collapse show" id="navbarScroll">
-              <div className="d-flex">
-                <div className="container-fluid d-flex justify-content-between align-items-center">
-                  <IoSearch
+              <div className="d-flex" >
+                <div className="container-fluid navbar__endSection">
+                  {/* <BsPlusCircleFill
                     size={15}
                     color="#fff"
                     className="mx-2"
-                    onClick={handleActive}
-                  />
-                  <BsPlusCircleFill
-                    size={15}
-                    color="#fff"
-                    className="mx-2"
-                    onClick={handleActive}
-                  />
+                  /> */}
                   <div className="d-flex justify-content-between align-items-center mx-2">
-                    <FaFlag
-                      size={15}
-                      color="#fff"
-                      className=""
-                      onClick={handleActive}
-                    />
+                    <FaFlag size={15} color="#fff" className="language__icon" />
                     <span
                       className="text-light ms-2"
                       style={{ fontSize: "12px" }}
@@ -90,12 +59,7 @@ const Navbar = ({ handleActive, current }) => {
                       Languages
                     </span>
                   </div>
-                  <FiBell
-                    size={15}
-                    color="#fff"
-                    className="mx-2"
-                    onClick={handleActive}
-                  />
+                  <FiBell size={15} color="#fff" className="mx-2" />
                   <div
                     className="navbar-collapse collapse show d-flex justify-content-between align-items-center mx-2"
                     id="navbarScroll"
@@ -116,14 +80,18 @@ const Navbar = ({ handleActive, current }) => {
                           aria-expanded="false"
                         >
                           <span
-                            className="active icon-link-hover text-light link-item"
+                            className={
+                              active
+                                ? "icon-link-hover text-light link-item"
+                                : "link__Active icon-link-hover text-light link-item"
+                            }
                             aria-current="page"
-                            onClick={() => setToggleArrow(!toggleArrow)}
+                            onClick={() => setActive(!active)}
                           >
                             {"Chebesi Awah"}
                           </span>
                         </span>
-                        {!toggleArrow ? (
+                        {!active ? (
                           <RiArrowDropDownLine
                             size={25}
                             color="rgb(59, 130, 246)"
@@ -131,7 +99,7 @@ const Navbar = ({ handleActive, current }) => {
                         ) : (
                           <RiArrowDropUpLine
                             size={25}
-                            color={!toggleArrow ? "black" : "rgb(59, 130, 246)"}
+                            color={!active ? "black" : "rgb(59, 130, 246)"}
                             className="active"
                           />
                         )}

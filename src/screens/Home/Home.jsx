@@ -1,18 +1,19 @@
 import React from 'react'
 import { SlGraph } from 'react-icons/sl'
-import OverViewCard from '../components/cards/OverviewCard'
-import { clients, overViewData, transactions, reportLabels, options, incomeLabels } from '../data/data'
-import ClientCard from '../components/cards/ClientCard'
-import TransactionsCard from '../components/cards/TransactonsCard'
+import OverViewCard from '../../components/cards/OverviewCard'
+import { clients, overViewData, transactions, reportLabels, options, incomeLabels } from '../../data/data'
+import ClientCard from '../../components/cards/ClientCard'
+import TransactionsCard from '../../components/cards/TransactonsCard'
 import { IoSettingsSharp } from "react-icons/io5";
 import { HiMiniUsers } from 'react-icons/hi2'
 import {
-  TodoList, LineChart, ActivityCard, ReportCard, IncomeExpense,
+  TodoList, ActivityCard, ReportCard, IncomeExpense,
   FinanceOverview,
   TaskAndProjectCard, RecentInvoices
-} from '../components/plugins'
+} from '../../components/plugins'
 import Paper from '@mui/material/Paper';
 import Moveable from "react-moveable";
+import './styles.css'
 
 
 const Home = () => {
@@ -45,7 +46,7 @@ const Home = () => {
           }
         </div>
       </div>
-      <div className="d-flex clients justify-content-between align-items-center py-4 gap-2 w-100">
+      <div className="home__client_transactions clients py-4 gap-2 w-100">
         <div className="d-flex flex-column justify-content-between align-items-center py-4 gap-2 w-100">
           {
             transactions.map((data) => (

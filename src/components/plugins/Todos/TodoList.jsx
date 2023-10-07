@@ -1,21 +1,11 @@
-import React, { useState } from "react";
-import { CompactTable } from "@table-library/react-table-library/compact";
-import { useTheme } from "@table-library/react-table-library/theme";
-import { getTheme } from "@table-library/react-table-library/baseline";
+import React from "react";
 import "./styles.css";
 import { Link } from 'react-router-dom'
 //import Paper from '@mui/material/Paper';
 
 
 const TodoList = () => {
-  const COLUMNS = [
-    {
-      label: "What To Do",
-      renderCell: (item) => "",
-    },
-    { label: "Status", renderCell: (item) => "" },
-    { label: "Username", renderCell: (item) => item.username },
-  ];
+
   return (
     <div className="todoList__container">
       <div className="todo__listHeader todo-preview  panel pane-custom menu">
@@ -51,9 +41,9 @@ const TodoList = () => {
           <tr>
             <th></th>
             <th></th>
-            <th  style={{fontSize:"13px",color:"#656565"}}>What To Do</th>
-            <th  style={{fontSize:"13px",color:"#656565"}}>Status</th>
-            <th  style={{fontSize:"13px",color:"#656565"}}>End Date</th>
+            <th style={{ fontSize: "13px", color: "#656565" }}>What To Do</th>
+            <th style={{ fontSize: "13px", color: "#656565" }}>Status</th>
+            <th style={{ fontSize: "13px", color: "#656565" }}>End Date</th>
             <th></th>
           </tr>
         </thead>

@@ -5,13 +5,7 @@ import CreateUser from '../components/usersList/CreateUser';
 
 const UsersScreen = () => {
     const [active, setActive] = useState("All");
-    const handleTabs = () => {
-     if( active === "All" ){
-setActive("New")
-     }else{
-        setActive("All")
-     }
-    }
+    
   return (
     <div>
     <div className="w-100 d-flex justify-content-start align-items-center promotionScreen_header">

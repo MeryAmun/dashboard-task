@@ -1,10 +1,10 @@
-import React, { useState } from "react";
+import React from "react";
 import DatePicker from "react-datepicker";
 import { FaCalendarAlt } from 'react-icons/fa'
 
 
 const DateComponent = () => {
-    const [startDate, setStartDate] = useState(new Date());
+    //const [startDate, setStartDate] = useState(new Date());
     const renderYearContent = (year) => {
         const tooltipText = `Tooltip for year: ${year}`;
         return <span title={tooltipText}  style={{fontSize:"12px"}}>{year}</span>;

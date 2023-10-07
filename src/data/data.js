@@ -39,7 +39,7 @@ import {
 } from "react-icons/fa";
 import {  GiSlingshot } from "react-icons/gi";
 import { FiActivity } from "react-icons/fi";
-import { FaBars,FaPeopleCarry } from "react-icons/fa";
+import { FaBars} from "react-icons/fa";
 import { GoGoal, GoStack } from "react-icons/go";
 import { BsExclamationCircle } from "react-icons/bs";
 import { HiMiniUsers } from "react-icons/hi2";
@@ -495,8 +495,6 @@ export const sideBarData = [
     link: "/mail",
     id: 32,
   },
- 
-,
 
   {
     icon: FaArrowsRotate,

@@ -17,7 +17,6 @@
     "@fullcalendar/timegrid": "^6.1.9",
     "@mui/material": "^5.14.11",
     "@syncfusion/ej2-react-filemanager": "^23.1.36",
-    "@table-library/react-table-library": "^4.1.7",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",

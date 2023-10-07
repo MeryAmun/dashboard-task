@@ -87,5 +87,13 @@ code {
       border: 1px solid #333;
       box-sizing: border-box;
   }
+.home__client_transactions{
   
+}
+  @media screen and (max-width: 576px) {
+    .dashboard__graph {
+      width: 100%;
+    }
+  }
+
   

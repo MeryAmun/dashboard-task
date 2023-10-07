@@ -1,0 +1,39 @@
+.home__client_transactions{
+    display:flex;
+    justify-content:space-between;
+     align-items:center; 
+     padding: 20px 0;
+     width:100%;
+
+}
+
+
+
+.dashboard__graphs {
+    position: relative;
+    margin-top: 50px;
+}
+
+
+.dashboard__graph {
+    width: 46%;
+    height: 437px;
+    overflow-y: scroll;
+    background-color: #fff;
+    border-radius: 5px;
+    margin: 20px;
+    text-align: center;
+    background: #ee8;
+    color: #333;
+    font-weight: bold;
+    border: 1px solid #333;
+    box-sizing: border-box;
+}
+.home__client_transactions{
+
+}
+@media screen and (max-width: 576px) {
+  .dashboard__graph {
+    width: 100%;
+  }
+}

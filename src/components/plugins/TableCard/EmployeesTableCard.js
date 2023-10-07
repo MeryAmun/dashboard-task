@@ -1,39 +1,38 @@
-import React, { useState, useRef } from "react";
+import React, { useState } from "react";
 import Paper from "@mui/material/Paper";
 import { BsEyeFill } from "react-icons/bs";
 import { RiDeleteBinLine } from "react-icons/ri";
 import "./styles.css";
-//import { TablePagination } from "../index";
+import { TablePagination } from "../index";
 import ProgressBar from 'react-bootstrap/ProgressBar';
 
 const EmployeesTableCard = ({ columns, data }) => {
-  const tableRef = useRef();
-  const [searchTerm, setSearchTerm] = useState("");
+  //const [searchTerm, setSearchTerm] = useState("");
   const [currentPage, setCurrentPage] = useState(1);
   const [numPerPage] = useState(5);
-  const [filtered, setFiltered] = useState(data);
+  //const [filtered, setFiltered] = useState(data);
   const indexOfLastRecord = currentPage * numPerPage;
   const indexOfFirstRecord = indexOfLastRecord - numPerPage;
   const currentRecords = data.slice(indexOfFirstRecord, indexOfLastRecord);
  const nPages = Math.ceil(data.length /  numPerPage);
 
 
-  const handleInputChange = (e) => {
-    const searchValue = e.target.value;
-    setSearchTerm(searchTerm);
-    const filteredItems = data.filter((item) =>
-      item.name.toLowerCase().includes(searchValue.toLowerCase())
-    );
-    setFiltered(filteredItems);
-    setSearchTerm("");
-  };
-console.log(currentRecords)
+  // const handleInputChange = (e) => {
+  //   const searchValue = e.target.value;
+  //   setSearchTerm(searchTerm);
+  //   const filteredItems = data.filter((item) =>
+  //     item.name.toLowerCase().includes(searchValue.toLowerCase())
+  //   );
+  //   setFiltered(filteredItems);
+  //   setSearchTerm("");
+  // };
+//console.log(currentRecords)
   // useEffect(() => {
   //   setFetchedData(data[numPerPage])
   //   setFiltered(data[numPerPage])
   // }, [currentPage])
   
-  const toggleActiveStatus = (id) => {
+  //const toggleActiveStatus = (id) => {
     // if(status === "Active"){
     //   setStatus("")
     //   alert(` user ${id} went offline`);
@@ -49,26 +48,26 @@ console.log(currentRecords)
     //   }
     //   return status
     // })
-    alert(`user ${id} came online`);
+    //alert(`user ${id} came online`);
     //}
-  };
+ // };
 
-  const handleEdit = (id) => {
-    alert(`You want to Edit  user ${id}`);
-  };
-  const handleDelete = (id) => {
-    alert(`You want to Delete user ${id}`);
-  };
-  const handleEmail = (id) => {
-    alert(`You want to Email ${id}`);
-  };
+  // const handleEdit = (id) => {
+  //   alert(`You want to Edit  user ${id}`);
+  // };
+  // const handleDelete = (id) => {
+  //   alert(`You want to Delete user ${id}`);
+  // };
+  // const handleEmail = (id) => {
+  //   alert(`You want to Email ${id}`);
+  // };
 
   return (
     <Paper
       elevation={3}
       className="d-flex flex-column justify-content-start align-items-center pb-4 w-100"
     >
-      <div className="w-100" ref={tableRef}>
+      <div className="w-100">
         <table className="table">
           <thead className="">
             <tr>
@@ -87,7 +86,7 @@ console.log(currentRecords)
             </tr>
           </thead>
           <tbody>
-            {filtered?.map((item) => (
+            {currentRecords?.map((item) => (
               <tr>
                 <td>
                   <img src={item?.image} alt="" width="40px" height="40px" />
@@ -106,14 +105,14 @@ console.log(currentRecords)
                       <BsEyeFill
                         size={15}
                         color="white"
-                        onClick={() => handleEmail(item.id)}
+                        onClick={() =>{}}
                       />
                     </span>
                     <span className="delete mx-1">
                       <RiDeleteBinLine
                         size={15}
                         color="white"
-                        onClick={() => handleDelete(item.id)}
+                        onClick={() =>{}}
                       />
                     </span>
                   </div>
@@ -127,52 +126,16 @@ console.log(currentRecords)
       <br />
       <div className="d-flex justify-content-between align-items-center w-100 px-4">
         <div className="">
-          <p className="pagination_note">
-            Showing <span>{currentPage}</span> to <span></span> of{" "}
-            <span>{nPages}</span> Entry
+        <p className="pagination_note">
+            Showing Page <span>{currentPage}</span> of{" "}
+            <span>{nPages} pages</span>
           </p>
         </div>
-        <div className="pagination_buttons">
-          {/* <TablePagination 
-            nPages={nPages}
-            currentPage={currentPage}
-            setCurrentPage={setCurrentPage}
-          /> */}
-          <button
-            className="bg-light"
-            disabled={data.length > 0 ? false : true}
-            style={{
-              backgroundColor: "5D9CEC",
-              padding: "3px 10px",
-              border: "none",
-            }}
-          >
-            Previous
-          </button>
-          {data.length > 0 && (
-            <button
-              className=""
-              style={{
-                backgroundColor: "rgb(35, 183, 229)",
-                padding: "3px 10px",
-                border: "none",
-              }}
-            >
-              1
-            </button>
-          )}
-          <button
-            className="bg-light"
-            disabled={data.length > 0 ? false : true}
-            style={{
-              backgroundColor: "5D9CEC",
-              padding: "3px 10px",
-              border: "none",
-            }}
-          >
-            Next
-          </button>
-        </div>
+        <TablePagination 
+      nPages={nPages}
+      currentPage={currentPage}
+      setCurrentPage={setCurrentPage}
+    />
       </div>
     </Paper>
   );

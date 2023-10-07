@@ -4,16 +4,16 @@ import { EmployeesTableCard } from '../../components/plugins';
 import CreateEmployee from './CreateEmployee';
 import { employees } from "../../data/data"
 import { BsEyeFill } from "react-icons/bs";
-import { TiEdit } from "react-icons/ti";
+// import { TiEdit } from "react-icons/ti";
 import { RiDeleteBinLine } from "react-icons/ri";
 
 
 const EmployeesScreen = () => {
   const [active, setActive] = useState("All");
 
-  const handleEdit = (id) => {
-    alert(`You want to Edit  user ${id}`);
-  };
+  // const handleEdit = (id) => {
+  //   alert(`You want to Edit  user ${id}`);
+  // };
   const handleDelete = (id) => {
     alert(`You want to Delete user ${id}`);
   };

@@ -32,7 +32,7 @@
     align-items: center;
     overflow: hidden;
     padding: 10px 5px;
-    background-color: #000;
+    /* background-color: #000; */
 
 }
 
@@ -113,6 +113,10 @@
 
 .linkTitleActive {
     color: rgb(23, 151, 190);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 24px;
 }
 
 
@@ -177,20 +181,23 @@
 /* ========================media queries =============================================*/
 
 @media screen and (max-width: 576px) {
-    .sidebar__wrapperMobile {
-        width: 0;
-
-    }
-
-    .sidebar__wrapperActive {
+    /* .sidebar__wrapper{
+        border: 2px solid yellowgreen;
+    } */
+    /* .sidebar__wrapperActive {
         width: 240;
         z-index: 1036;
         transition: width ease 0.31s;
 
-    }
+    } */
+    /* .sidebar{
+        border: 2px solid yellowgreen;
+      } */
+      /* .sidebar__linkTitle{
+        border: 2px solid yellowgreen;
+      } */
 
-
-    .sidebar__wrapper:hover {
+    /* .sidebar__wrapper:hover {
         display: none;
         flex-direction: column;
         justify-content: flex-start;
@@ -199,9 +206,9 @@
         width: 190px;
         background-color: #fff;
 
-    }
+    } */
 
-    .sidebar__wrapperActive {
+    /* .sidebar__wrapperActive {
         display: none;
         flex-direction: column;
         justify-content: flex-start;
@@ -210,7 +217,7 @@
         width: 190px;
         background-color: #fff;
 
-    }
+    } */
 
     .sidebar__closeButton {
         display: block;

@@ -4,13 +4,17 @@ import { BsEyeFill } from "react-icons/bs";
 import { TiEdit } from "react-icons/ti";
 import { RiDeleteBinLine } from "react-icons/ri";
 import "./styles.css";
+import { TablePagination } from "../index";
 
 const UsersTableCard = ({ columns, data}) => {
- // const [searchTerm, setSearchTerm] = useState("");
- // const [page, setPage] = useState(0)
- const [filtered, 
-  //setFiltered
-] = useState(data);
+  const [currentPage, setCurrentPage] = useState(1);
+  const [numPerPage] = useState(5);
+  //const [filtered, setFiltered] = useState(data);
+  const indexOfLastRecord = currentPage * numPerPage;
+  const indexOfFirstRecord = indexOfLastRecord - numPerPage;
+  const currentRecords = data.slice(indexOfFirstRecord, indexOfLastRecord);
+ const nPages = Math.ceil(data.length /  numPerPage);
+
 
 // const handleInputChange = (e) => {
 //   const searchTerm = e.target.value;
@@ -56,7 +60,7 @@ const UsersTableCard = ({ columns, data}) => {
             </tr>
           </thead>
           <tbody>
-            {filtered?.map((item) => (
+            {currentRecords?.map((item) => (
               <tr>
                 <td>
                   <img src={item?.image} alt="" width="40px" height="40px" />
@@ -122,46 +126,15 @@ const UsersTableCard = ({ columns, data}) => {
       <div className="d-flex justify-content-between align-items-center w-100 px-4">
         <div className="">
           <p className="pagination_note">
-            Showing <span>{data.length}</span> to <span>{data.length}</span> of{" "}
-            <span>{data.length}</span> Entry
+            Showing Page <span>{currentPage}</span> of{" "}
+            <span>{nPages} pages</span>
           </p>
         </div>
-        <div className="pagination_buttons">
-          <button
-            className="bg-light"
-            disabled={data.length > 0 ? false : true}
-            style={{
-              backgroundColor: "5D9CEC",
-              padding: "3px 10px",
-              border: "none",
-            }}
-          >
-            Previous
-          </button>
-          {data.length > 0 && (
-            <button
-              className=""
-              style={{
-                backgroundColor: "rgb(35, 183, 229)",
-                padding: "3px 10px",
-                border: "none",
-              }}
-            >
-              1
-            </button>
-          )}
-          <button
-            className="bg-light"
-            disabled={data.length > 0 ? false : true}
-            style={{
-              backgroundColor: "5D9CEC",
-              padding: "3px 10px",
-              border: "none",
-            }}
-          >
-            Next
-          </button>
-        </div>
+        <TablePagination 
+      nPages={nPages}
+      currentPage={currentPage}
+      setCurrentPage={setCurrentPage}
+    />
       </div>
     </Paper>
   );

@@ -1,4 +1,4 @@
-export { default as Home } from './Home'
+export { default as Home } from './Home/Home'
 export { default as UsersScreen } from './UsersScreen'
 export { default as Promotions } from './Promotions/Promotions'
 export { default as TransactionsScreen } from './Transactions/Transactions'

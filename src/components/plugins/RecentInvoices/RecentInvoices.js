@@ -1,19 +1,9 @@
-import React, { useState } from "react";
-import { CompactTable } from "@table-library/react-table-library/compact";
-import { useTheme } from "@table-library/react-table-library/theme";
-import { getTheme } from "@table-library/react-table-library/baseline";
-import { Link } from 'react-router-dom'
+import React from "react";
+
 //import Paper from '@mui/material/Paper';
 
+const RecentInvoices = () => {
 
-const RecentInvoices = ({title, tableLabel}) => {
-  const COLUMNS = [
-    {
-      label: `${tableLabel}`,
-      renderCell: (item) => "",
-    },
-    { label: "End Date", renderCell: (item) => item.username },
-  ];
   return (
     <div className="todoList__container">
       <div className="todo__listHeader todo-preview  panel pane-custom menu">

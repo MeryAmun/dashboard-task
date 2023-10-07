@@ -1,4 +1,4 @@
-import React,{ useState, useRef } from 'react'
+import React,{ useState } from 'react'
 import './sidebar.css'
 import { Link } from 'react-router-dom'
 import { sideBarData } from '../../data/data';
@@ -10,17 +10,14 @@ import { IoSearch } from 'react-icons/io5'
 // const width ={
 //   width:'30px'
 // }
-const Sidebar = ({active}) => {
+const Sidebar = ({ handleActive }) => {
   const [activeId, setActiveId] = useState(null);
   //const [online, setOnline] = useState(true)
-  const sidebarWidth = useRef();
-
  
   return (
     <div className='sidebar'>
       <div 
-      className="sidebar__wrapper"
-       ref={sidebarWidth}>
+      className="sidebar__wrapper">
       <div className="sidebar__logoContainer">
        <div className="sidebar__logoBox">
      
@@ -47,11 +44,13 @@ const Sidebar = ({active}) => {
 <div className= { activeId === link.id ? "sidebar__linkContainer sidebar__linkContainerActive" : "sidebar__linkContainer"}
       onClick={() => setActiveId(link.id)
       }>
-      <Link to={link.link} className={ activeId === link.id ? "sidebar__link linkTitleActive":"sidebar__link"}>
+      <Link to={link.link} className={ activeId === link.id ? "sidebar__link linkTitleActive":"sidebar__link"}
+      onClick={handleActive}
+      >
       {
         <link.icon size={15} className={ activeId === link.id ? 'sidebar__linkIcon sidebar__iconAnd__sidebarIconNameActive': 'sidebar__linkIcon'}/>
       }
-    <span className={ activeId === link.id ? 'sidebar__linkTitle  text-rgb(23, 151, 190)': 'sidebar__linkTitle '}>
+    <span className={ activeId === link.id ? 'linkTitleActive ': 'sidebar__linkTitle '}>
       {link.title}
       </span>
       </Link>
