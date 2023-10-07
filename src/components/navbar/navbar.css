@@ -3,6 +3,15 @@
     background-color: #000;
     padding: 0;
     width: 100%;
+}
+
+.navbar{
+    background-color: #000;
+    padding: 20px 0;
+    width: 100%;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
     
 }
 .navbar__logo_space{
@@ -12,21 +21,40 @@
 margin: 0;
 }
 .navbar__main{
+width: 40%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
+}
+
+.navbar__languages{
+width: 100%;
+}
+.navbar__userProfile{
+width:40%;
+display:flex;
+flex-direction: row;
+justify-content:center;
+align-items: center;
 }
 .navbar__endSection{
-    margin-right: 20px;
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: center;
+    display:flex;
+    flex-direction: row;
+    justify-content:flex-end;
     align-items: center;
+    width: 40%;
+   
 }
-form,input{
+.navbar__dropdown{
+    width: 100%;
+    
+}
+.navbar__input{
+   width: 100%;
     border: none;
     outline: none;
-    background-color: transparent;
+    caret-color: rgb(170, 170, 170);
+    background-color: rgba(255, 255, 255, 0.102);
 }
 ::placeholder{
     color: #fff;
@@ -129,21 +157,6 @@ cursor: pointer;
 .dropdown-toggle::after {
     display: none !important; 
 }
-.navbar__loginLink{
-    border: 1px solid #f24443;
-    border-radius: 20px;
-    padding: 8px 35px;
-    background-color: #fff;
-    color: #f24443;
-    cursor: pointer;
-    width: 98px;
-    text-decoration: none;
-    margin-left: 14px;
-}
-.navbar__loginLink:hover{
-    background-color: rgba(242,68,67,.08);
-    color: #f24443;
-}
 
 
 @media screen and (max-width: 576px) {
@@ -170,12 +183,16 @@ cursor: pointer;
        width: 100%;
     }
     .navbar__endSection{
-        justify-content: space-between;
-        width: 100%;
-        padding-top: 10px;
-       
+        justify-content: center;
         margin: 0;
+         width: 100%;
     }
+    .navbar__languages{
+        width: 100%;
+        }
+        .navbar__userProfile{
+            width:20%;
+        }
     .navbar__icons{
        display: none;
      }

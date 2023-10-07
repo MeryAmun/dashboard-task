@@ -27,11 +27,11 @@ const date = new Date();
 
 function App() {
   const mainApp = useRef();
-  const [active, setActive] = useState(false);
+ /// const [active, setActive] = useState(false);
   const [toggleWidth, setToggleWidth] = useState(false);
   const location = useLocation();
   const [currentLocation, setCurrentLocation] = useState();
-  const sidebarWidth = useRef();
+  //const sidebarWidth = useRef();
 
   useEffect(() => {
     setCurrentLocation(getCurrentLocation(location.pathname));
